@@ -28,7 +28,7 @@ all: clean verilator sw
 
 verilator:
 	$(VERILATOR) $(VERILATOR_OPT) -F $(RTL_SOURCES) -top-module $(TOP_MODULE) --Mdir $(RTL_WORK_DIR)
-	$(MAKE) -C $(RTL_WORK_DIR) -f V$(TOP_MODULE).mk
+	$(MAKE) -C $(RTL_WORK_DIR) -f V$(TOP_MODULE).mk VERILATOR_ROOT=$(VERILATOR_ROOT)
 
 sw: verilator
 	$(CXX) $(CXX_OPT) $(VERILATOR_CXX_FILES) $(TEST_CXX_FILES) $(TEST_RTL_SIMLIB) $(CXX_OPT) -o $(TEST_BIN)

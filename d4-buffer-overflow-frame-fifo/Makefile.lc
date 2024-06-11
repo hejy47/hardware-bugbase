@@ -33,7 +33,7 @@ losscheck:
 
 verilator: losscheck
 	$(VERILATOR) $(VERILATOR_OPT) -F $(SIM_SOURCES) -top-module $(SIM_TOP_MODULE) --Mdir $(RTL_WORK_DIR)
-	$(MAKE) -C $(RTL_WORK_DIR) -f V$(SIM_TOP_MODULE).mk
+	$(MAKE) -C $(RTL_WORK_DIR) -f V$(SIM_TOP_MODULE).mk VERILATOR_ROOT=$(VERILATOR_ROOT)
 
 sw: verilator
 	$(CXX) $(CXX_OPT) $(VERILATOR_CXX_FILES) $(TEST_CXX_FILES) $(TEST_RTL_SIMLIB) $(CXX_OPT) -o $(TEST_BIN)

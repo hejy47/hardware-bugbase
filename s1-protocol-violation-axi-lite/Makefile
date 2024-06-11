@@ -25,7 +25,7 @@ all: $(RTL_SOURCES)
 
 $(RTL_SOURCES):
 	$(VERILATOR) $(VERILATOR_OPT) -F $@.txt -top-module $(SIM_TOP_MODULE) --Mdir $@_work
-	$(MAKE) -C $@_work -f V$(SIM_TOP_MODULE).mk
+	$(MAKE) -C $@_work -f V$(SIM_TOP_MODULE).mk VERILATOR_ROOT=$(VERILATOR_ROOT)
 	$(CXX) $(CXX_OPT) -I$@_work $(VERILATOR_CXX_FILES) $(TEST_CXX_FILES) $@_work/V$(SIM_TOP_MODULE)__ALL.a $(CXX_OPT) -o $@_test
 
 clean:

@@ -7,7 +7,7 @@ VERILATOR=$(CURDIR)/../../veripass/verilator/bin/verilator
 VERILATOR_ROOT=$(CURDIR)/../../veripass/verilator
 verilator:
 	$(VERILATOR) -cc -F source.txt -top-module fftmain -Wno-TIMESCALEMOD --trace --assert -Wno-PINMISSING -Wno-VLTAG
-	cd obj_dir; $(MAKE) -f Vfftmain.mk
+	cd obj_dir; $(MAKE) -f Vfftmain.mk VERILATOR_ROOT=$(VERILATOR_ROOT)
 
 sw: verilator
 	cd test; $(MAKE)
