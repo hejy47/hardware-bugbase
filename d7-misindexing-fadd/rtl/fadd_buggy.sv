@@ -1,4 +1,4 @@
-module fadd_buggy #(parameter N = 32, parameter E = 8, parameter S = 1) (
+module fadd#(parameter N = 32, parameter E = 8, parameter S = 1) (
     // Inputs
     input logic         clk,
     input logic         rst,
