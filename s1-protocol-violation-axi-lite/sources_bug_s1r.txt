@@ -1,0 +1,2 @@
+rtl/trace_tb0.v
+rtl/xlnxdemo_bug_s1r.v
