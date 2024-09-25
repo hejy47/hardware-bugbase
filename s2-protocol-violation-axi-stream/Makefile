@@ -1,5 +1,5 @@
 include ../common/Makefile.env
-RTL_SOURCES?=sources0
+RTL_SOURCES?=sources_bug sources_oracle
 SIM_TOP_MODULE?=testbench
 TEST_DIR?=test
 
