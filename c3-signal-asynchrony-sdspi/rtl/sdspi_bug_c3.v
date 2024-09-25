@@ -579,19 +579,8 @@ module	sdspi(i_clk,
 			o_wb_data <= fifo_b_reg;
 		endcase
 
-	reg dly_stb;
-	initial dly_stb = 0;
 	always @(posedge i_clk)
-		if (!i_wb_cyc)
-			dly_stb <= 0;
-		else
-			dly_stb <= wb_stb;
-	initial o_wb_ack = 0;
-	always @(posedge i_clk)
-		if (!i_wb_cyc)
-			o_wb_ack <= 1'b0;
-		else
-			o_wb_ack <= dly_stb;
+		o_wb_ack <= wb_stb;
 
 	initial	q_busy = 1'b1;
 	always @(posedge i_clk)
