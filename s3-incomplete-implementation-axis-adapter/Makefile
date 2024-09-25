@@ -1,5 +1,5 @@
 include ../common/Makefile.env
-SIM_SOURCES?=sources.txt
+SIM_SOURCES?=sources_oracle sources_bug
 SIM_TOP_MODULE?=test_axis_adapter_64_8
 TEST_DIR?=test
 RTL_WORK_DIR?=work
@@ -24,14 +24,12 @@ TEST_CXX_FILES?=$(shell find $(TEST_DIR) -name '*.cpp')
 TEST_RTL_SIMLIB?=$(RTL_WORK_DIR)/V$(SIM_TOP_MODULE)__ALL.a
 TEST_BIN?= test_axis_adapter_64_8
 
-all: clean verilator sw
+all: $(SIM_SOURCES)
 
-verilator:
-	$(VERILATOR) $(VERILATOR_OPT) -F $(SIM_SOURCES) -top-module $(SIM_TOP_MODULE) --Mdir $(RTL_WORK_DIR)
-	$(MAKE) -C $(RTL_WORK_DIR) -f V$(SIM_TOP_MODULE).mk VERILATOR_ROOT=$(VERILATOR_ROOT)
-
-sw: verilator
-	$(CXX) $(CXX_OPT) $(VERILATOR_CXX_FILES) $(TEST_CXX_FILES) $(TEST_RTL_SIMLIB) $(CXX_OPT) -o $(TEST_BIN)
+$(SIM_SOURCES):
+	$(VERILATOR) $(VERILATOR_OPT) -F $@.txt -top-module $(SIM_TOP_MODULE) --Mdir $@_work
+	$(MAKE) -C $@_work -f V$(SIM_TOP_MODULE).mk VERILATOR_ROOT=$(VERILATOR_ROOT)
+	$(CXX) $(CXX_OPT) -I$@_work $(VERILATOR_CXX_FILES) $(TEST_CXX_FILES) $@_work/V$(SIM_TOP_MODULE)__ALL.a $(CXX_OPT) -o $@_test
 
 clean:
 	rm -rf $(RTL_WORK_DIR) $(TEST_BIN) *.vcd *.fst
