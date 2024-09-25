@@ -30,6 +30,18 @@ reg [31:0] cycle = 0;
 wire [LEN_WIDTH-1:0] frame_len;
 wire frame_len_valid;
 
+
+integer f;
+// dump I/O
+initial begin
+  f = $fopen("output.txt");
+  $fwrite(f, "rst, monitor_axis_tkeep, monitor_axis_tvalid, monitor_axis_tready, monitor_axis_tlast, frame_len, frame_len_valid\n");
+end
+
+always @(posedge clk) begin
+  $fwrite(f, "%d,%d,%d,%d,%d,%d,%d\n", rst, monitor_axis_tkeep, monitor_axis_tvalid, monitor_axis_tready, monitor_axis_tlast, frame_len, frame_len_valid);
+end
+
 initial begin
 
     // myhdl integration
