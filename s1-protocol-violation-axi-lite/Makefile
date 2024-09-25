@@ -1,5 +1,5 @@
 include ../common/Makefile.env
-RTL_SOURCES?=sources0 sources1
+RTL_SOURCES?=sources_bug_s1b sources_bug_s1r sources_oracle_tb0 sources_oracle_tb1
 SIM_TOP_MODULE?=testbench
 TEST_DIR?=test
 
@@ -32,10 +32,16 @@ clean:
 	rm -rf *_work *_test *.vcd *.fst
 
 sim:
-	@echo "BUG 1: incomplete implementation of AXI"
-	./sources0_test
-	@echo "BUG 2: incomplete implementation of AXI"
-	./sources1_test
+	# @echo "BUG 1: incomplete implementation of AXI"
+	# ./sources0_test
+	# @echo "BUG 2: incomplete implementation of AXI"
+	# ./sources1_test
+	@echo "oracle"
+	./sources_oracle
+	# @echo "BUG s1b: incomplete implementation of AXI"
+	# ./sources_bug_s1b
+	# @echo "BUG s1r: incomplete implementation of AXI"
+	# ./sources_bug_s1r
 
 wave:
 	gtkwave sources0_test.vcd >/dev/null 2>/dev/null &
