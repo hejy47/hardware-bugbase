@@ -1,5 +1,7 @@
 #include <stdlib.h>
 #include <iostream>
+#include <fstream>
+#include <string>
 #include <stdio.h>
 #include <cassert>
 #include <verilated_fst_c.h>
@@ -30,9 +32,31 @@ void sc_time_step() {
     timestamp += pst;
 }
 
+void write_to_output(std::ofstream &outfile, Vaxis_fifo_wrapper *tb) {
+    outfile << static_cast<int>(tb->rst) << ",";
+    outfile << static_cast<int>(tb->s_axis_tdata) << ",";
+    outfile << static_cast<int>(tb->s_axis_tvalid) << ",";
+    outfile << static_cast<int>(tb->s_axis_tready) << ",";
+    outfile << static_cast<int>(tb->s_axis_tlast) << ",";
+    outfile << static_cast<int>(tb->s_axis_tuser) << ",";
+    outfile << static_cast<int>(tb->m_axis_tdata) << ",";
+    outfile << static_cast<int>(tb->m_axis_tvalid) << ",";
+    outfile << static_cast<int>(tb->m_axis_tready) << ",";
+    outfile << static_cast<int>(tb->m_axis_tlast) << ",";
+    outfile << static_cast<int>(tb->m_axis_tuser) << ",";
+    outfile << static_cast<int>(tb->status_overflow) << ",";
+    outfile << static_cast<int>(tb->status_bad_frame) << ",";
+    outfile << static_cast<int>(tb->status_good_frame) << "\n";
+}
+
 int main(int argc, char **argv) {
     Verilated::commandArgs(argc, argv);
     Vaxis_fifo_wrapper *tb = new Vaxis_fifo_wrapper;
+
+    // init file
+    std::ofstream signal_file("output_axis_fifo.txt");
+    std::string signal_names = "rst, s_axis_tdata, s_axis_tvalid, s_axis_tready, s_axis_tlast, s_axis_tuser, m_axis_tdata, m_axis_tvalid, m_axis_tready, m_axis_tlast, m_axis_tuser, status_overflow, status_bad_frame, status_good_frame";
+    signal_file << signal_names << std::endl;
 
     Verilated::traceEverOn(true);
     VerilatedFstC *trace = new VerilatedFstC;
@@ -57,6 +81,7 @@ int main(int argc, char **argv) {
     for (int i = 0; i < 10; i++) {
         tb->clk = 1;
         tb->eval();
+        write_to_output(signal_file, tb);
         trace->dump(timestamp);
         sc_time_step();
         tb->clk = 0;
@@ -70,6 +95,7 @@ int main(int argc, char **argv) {
     for (int i = 0; i < 5; i++) {
         tb->clk = 1;
         tb->eval();
+        write_to_output(signal_file, tb);
         trace->dump(timestamp);
         sc_time_step();
         tb->clk = 0;
@@ -88,6 +114,7 @@ int main(int argc, char **argv) {
 
             tb->clk = 1;
             tb->eval();
+            write_to_output(signal_file, tb);
             trace->dump(timestamp);
             sc_time_step();
             tb->clk = 0;
@@ -104,6 +131,7 @@ int main(int argc, char **argv) {
 
         tb->clk = 1;
         tb->eval();
+        write_to_output(signal_file, tb);
         trace->dump(timestamp);
         sc_time_step();
         tb->clk = 0;
@@ -119,6 +147,7 @@ int main(int argc, char **argv) {
         for (int i = 0; i < 5; i++) {
             tb->clk = 1;
             tb->eval();
+            write_to_output(signal_file, tb);
             trace->dump(timestamp);
             sc_time_step();
             tb->clk = 0;
@@ -132,6 +161,9 @@ save_trace_and_exit:
 
     trace->flush();
     trace->close();
+
+    signal_file.flush();
+    signal_file.close();
 
     exit(EXIT_SUCCESS);
 }
