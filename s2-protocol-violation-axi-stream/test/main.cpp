@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <iostream>
+#include <fstream>
 #include <stdio.h>
 #include <cassert>
 #include <verilated_fst_c.h>
@@ -31,9 +32,23 @@ void sc_time_step() {
     timestamp += pst;
 }
 
+void write_to_output(std::ofstream &outfile, Vtestbench *tb) {
+  outfile << static_cast<uint64_t>(tb->testbench__DOT__PI_M_AXIS_ARESETN) << ", ";
+  outfile << static_cast<uint64_t>(tb->testbench__DOT__PI_M_AXIS_TREADY) << ", ";
+  outfile << static_cast<uint64_t>(tb->testbench__DOT__UUT__DOT__axis_tvalid) << ", ";
+  outfile << static_cast<uint64_t>(tb->testbench__DOT__UUT__DOT__stream_data_out) << ", ";
+  outfile << static_cast<uint64_t>(15) << ", ";
+  outfile << static_cast<uint64_t>(tb->testbench__DOT__UUT__DOT__axis_tlast_delay) << ",\n";
+}
+
+
 int main(int argc, char **argv) {
     Verilated::commandArgs(argc, argv);
     Vtestbench *tb = new Vtestbench;
+
+    std::ofstream signal_file("output_s1_axi_lite.txt");
+    std::string signal_names = "M_AXIS_ARESETN, M_AXIS_TREADY, M_AXIS_TVALID, M_AXIS_TDATA, M_AXIS_TSTRB, M_AXIS_TLAST";
+    signal_file << signal_names << std::endl;
 
     Verilated::traceEverOn(true);
     VerilatedFstC *trace = new VerilatedFstC;
@@ -51,6 +66,7 @@ int main(int argc, char **argv) {
     while (!Verilated::gotFinish()) {
         tb->clock = 1;
         tb->eval();
+        write_to_output(signal_file, tb);
         trace->dump(timestamp);
         sc_time_step();
 
@@ -64,6 +80,9 @@ save_trace_and_exit:
 
     trace->flush();
     trace->close();
+
+    signal_file.flush();
+    signal_file.close();
 
     exit(EXIT_SUCCESS);
 }
