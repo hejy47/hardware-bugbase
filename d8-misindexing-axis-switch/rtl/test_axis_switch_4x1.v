@@ -83,6 +83,18 @@ initial begin
 
 end
 
+
+integer f;
+// dump I/O
+initial begin
+  f = $fopen("output.txt");
+  $fwrite(f, "rst, s_axis_tdata, s_axis_tkeep, s_axis_tvalid, s_axis_tready, s_axis_tlast, s_axis_tid, s_axis_tdest, s_axis_tuser, m_axis_tdata, m_axis_tkeep, m_axis_tvalid, m_axis_tready, m_axis_tlast, m_axis_tid, m_axis_tdest, m_axis_tuser\n");
+end
+
+always @(posedge clk) begin
+  $fwrite(f, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n", rst, s_axis_tdata, s_axis_tkeep, s_axis_tvalid, s_axis_tready, s_axis_tlast, s_axis_tid, s_axis_tdest, s_axis_tuser, m_axis_tdata, m_axis_tkeep, m_axis_tvalid, m_axis_tready, m_axis_tlast, m_axis_tid, m_axis_tdest, m_axis_tuser);
+end
+
 always @(posedge clk) begin
         genclock <= cycle < 12;
         cycle <= cycle + 1;
