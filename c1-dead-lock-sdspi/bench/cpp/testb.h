@@ -49,21 +49,21 @@
 
 template <class VA>
 void write_to_output(std::ofstream &outfile, VA *tb) {
-  outfile << static_cast<int>(tb->i_wb_cyc) << ", ";
-  outfile << static_cast<int>(tb->i_wb_stb) << ", ";
-  outfile << static_cast<int>(tb->i_wb_we) << ", ";
-  outfile << static_cast<int>(tb->i_wb_addr) << ", ";
-  outfile << static_cast<int>(tb->i_wb_data) << ", ";
-  outfile << static_cast<int>(tb->o_wb_ack) << ", ";
-  outfile << static_cast<int>(tb->o_wb_stall) << ", ";
-  outfile << static_cast<int>(tb->o_wb_data) << ", ";
-  outfile << static_cast<int>(tb->o_cs_n) << ", ";
-  outfile << static_cast<int>(tb->o_sck) << ", ";
-  outfile << static_cast<int>(tb->o_mosi) << ", ";
-  outfile << static_cast<int>(tb->i_miso) << ", ";
-  outfile << static_cast<int>(tb->o_int) << ", ";
-  outfile << static_cast<int>(tb->i_bus_grant) << ", ";
-  outfile << static_cast<int>(tb->o_debug) << ",\n";
+  outfile << static_cast<uint64_t>(tb->i_wb_cyc) << ", ";
+  outfile << static_cast<uint64_t>(tb->i_wb_stb) << ", ";
+  outfile << static_cast<uint64_t>(tb->i_wb_we) << ", ";
+  outfile << static_cast<uint64_t>(tb->i_wb_addr) << ", ";
+  outfile << static_cast<uint64_t>(tb->i_wb_data) << ", ";
+  outfile << static_cast<uint64_t>(tb->o_wb_ack) << ", ";
+  outfile << static_cast<uint64_t>(tb->o_wb_stall) << ", ";
+  outfile << static_cast<uint64_t>(tb->o_wb_data) << ", ";
+  outfile << static_cast<uint64_t>(tb->o_cs_n) << ", ";
+  outfile << static_cast<uint64_t>(tb->o_sck) << ", ";
+  outfile << static_cast<uint64_t>(tb->o_mosi) << ", ";
+  outfile << static_cast<uint64_t>(tb->i_miso) << ", ";
+  outfile << static_cast<uint64_t>(tb->o_int) << ", ";
+  outfile << static_cast<uint64_t>(tb->i_bus_grant) << ", ";
+  outfile << static_cast<uint64_t>(tb->o_debug) << ",\n";
 }
 
 template <class VA>	class TESTB {
