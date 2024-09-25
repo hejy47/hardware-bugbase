@@ -39,3 +39,9 @@ end
 assign input_axis_tready = ~full;  //Buggy here, should be ~full & ~input_rst_sync3;
 
 ```
+
+
+```bash
+make SIM_SOURCES=sources_oracle.txt
+make SIM_SOURCES=sources_bug.txt
+```

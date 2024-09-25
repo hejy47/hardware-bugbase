@@ -102,7 +102,7 @@ wire read = (output_axis_tready | ~output_axis_tvalid_reg) & ~empty;
 
 assign {output_axis_tlast, output_axis_tuser, output_axis_tdata} = data_out_reg;
 
-assign input_axis_tready = ~full  & ~input_rst_sync3;
+assign input_axis_tready = ~full;
 assign output_axis_tvalid = output_axis_tvalid_reg;
 
 // reset synchronization
