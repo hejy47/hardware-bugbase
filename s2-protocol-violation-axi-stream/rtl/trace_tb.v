@@ -354,6 +354,10 @@ module testbench(input clock, output reg genclock);
       PI_M_AXIS_TREADY <= 1'b0;
     end
 
+    if (cycle == 45) begin
+      $finish;
+    end
+
     genclock <= cycle < 43;
     cycle <= cycle + 1;
   end
