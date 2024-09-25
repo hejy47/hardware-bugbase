@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <iostream>
+#include <fstream>
 #include <stdio.h>
 #include <cassert>
 #include <verilated_fst_c.h>
@@ -52,10 +53,23 @@ uint32_t op2[8] = {
     0x02800000
 };
 
+void write_to_output(std::ofstream &outfile, Vfadd *tb) {
+  outfile << static_cast<uint64_t>(tb->rst) << ", ";
+  outfile << static_cast<uint64_t>(tb->en) << ", ";
+  outfile << static_cast<uint64_t>(tb->op1) << ", ";
+  outfile << static_cast<uint64_t>(tb->op2) << ", ";
+  outfile << static_cast<uint64_t>(tb->res_val) << ", ";
+  outfile << static_cast<uint64_t>(tb->res) << ",\n";
+}
+
 int main(int argc, char **argv) {
     Verilated::commandArgs(argc, argv);
     Vfadd *tb = new Vfadd;
     int outcnt = 0;
+
+    std::ofstream signal_file("output_d7_fadd.txt");
+    std::string signal_names = "rst, en, op1, op2, res_val, res";
+    signal_file << signal_names << std::endl;
 
     Verilated::traceEverOn(true);
     VerilatedFstC *trace = new VerilatedFstC;
@@ -94,18 +108,19 @@ int main(int argc, char **argv) {
 
     tb->en = 1;
     for (int i = 0; i < 8; i++) {
-        if (tb->res_val_correct) {
-            assert(tb->res_val_buggy);
-            cout << "--------------------------" << endl;
-            cout << "correct: " << *(float*)&op1[outcnt] << " + " << *(float*)&op2[outcnt] << " = " << *(float*)&tb->res_correct << endl;
-            cout << "buggy:   " << *(float*)&op1[outcnt] << " + " << *(float*)&op2[outcnt] << " = " << *(float*)&tb->res_buggy << endl;
-            outcnt++;
-        }
+        // if (tb->res_val_correct) {
+        //     assert(tb->res_val_buggy);
+        //     cout << "--------------------------" << endl;
+        //     cout << "correct: " << *(float*)&op1[outcnt] << " + " << *(float*)&op2[outcnt] << " = " << *(float*)&tb->res_correct << endl;
+        //     cout << "buggy:   " << *(float*)&op1[outcnt] << " + " << *(float*)&op2[outcnt] << " = " << *(float*)&tb->res_buggy << endl;
+        //     outcnt++;
+        // }
 
         tb->op1 = op1[i];
         tb->op2 = op2[i];
         tb->clk = 1;
         tb->eval();
+        write_to_output(signal_file, tb);
         sc_time_step();
         tb->clk = 0;
         tb->eval();
@@ -114,16 +129,17 @@ int main(int argc, char **argv) {
 
     tb->en = 0;
     for (int i = 0; i < 10; i++) {
-        if (tb->res_val_correct) {
-            assert(tb->res_val_buggy);
-            cout << "--------------------------" << endl;
-            cout << "correct: " << *(float*)&op1[outcnt] << " + " << *(float*)&op2[outcnt] << " = " << *(float*)&tb->res_correct << endl;
-            cout << "buggy:   " << *(float*)&op1[outcnt] << " + " << *(float*)&op2[outcnt] << " = " << *(float*)&tb->res_buggy << endl;
-            outcnt++;
-        }
+        // if (tb->res_val_correct) {
+        //     assert(tb->res_val_buggy);
+        //     cout << "--------------------------" << endl;
+        //     cout << "correct: " << *(float*)&op1[outcnt] << " + " << *(float*)&op2[outcnt] << " = " << *(float*)&tb->res_correct << endl;
+        //     cout << "buggy:   " << *(float*)&op1[outcnt] << " + " << *(float*)&op2[outcnt] << " = " << *(float*)&tb->res_buggy << endl;
+        //     outcnt++;
+        // }
 
         tb->clk = 1;
         tb->eval();
+        write_to_output(signal_file, tb);
         sc_time_step();
         tb->clk = 0;
         tb->eval();
@@ -134,6 +150,8 @@ save_trace_and_exit:
 
     trace->flush();
     trace->close();
+    signal_file.flush();
+    signal_file.close();
 
     exit(EXIT_SUCCESS);
 }
