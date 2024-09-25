@@ -68,6 +68,18 @@ wire m_axis_tvalid;
 wire m_axis_tlast;
 wire drop_frame;
 
+integer f;
+// dump I/O
+initial begin
+  f = $fopen("output.txt");
+  $fwrite(f, "rst, input_axis_tdata, input_axis_tvalid, input_axis_tready, input_axis_tlast, input_axis_tuser, output_axis_tdata, output_axis_tvalid, output_axis_tready, output_axis_tlast, drop_frame\n");
+
+end
+
+always @(posedge clk) begin
+  $fwrite(f, "%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d\n",rst, s_axis_tdata, s_axis_tvalid, s_axis_tready, s_axis_tlast, s_axis_tuser, m_axis_tdata, m_axis_tvalid, m_axis_tready, m_axis_tlast, drop_frame);
+end
+
 initial begin
     // myhdl integration
     rst = 1'b1;
