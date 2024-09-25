@@ -167,7 +167,7 @@ module	llsdspi(i_clk, i_speed, i_cs, i_stb, i_byte,
 			// Hold, waiting for some action
 			r_clk_counter <= 0;
 			r_z_counter <= 1'b1;
-        end else if ((startup_hold || byte_accepted) && r_z_counter)
+        end else if ((startup_hold || byte_accepted))
 		begin
 			r_clk_counter <= i_speed;
 			r_z_counter <= (i_speed == 0);

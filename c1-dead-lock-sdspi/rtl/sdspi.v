@@ -85,6 +85,13 @@ module	sdspi(i_clk,
 	// if you don't want to use this initialization sequence.
 			STARTUP_CLOCKS = 75;
 	//
+	// For my first design, using an 80MHz clock, 7 bits to the clock
+	// divider was plenty.  Now that I'm starting to use faster and faster
+	// designs, it becomes important to parameterize the number of bits
+	// in the clock divider.  More than 8, however, and the interface
+	// will need to change.
+	parameter			CKDIV_BITS = 7;
+	//
 	// The SPI frequency is given by the system clock frequency divided
 	// by a (clock_divider + 1).  INITIAL_CLKDIV provides an initial value
 	// for this clock divider.
@@ -97,13 +104,6 @@ module	sdspi(i_clk,
 	// arbiter, just set i_bus_grant to the constant 1'b1 and set
 	// OPT_SPI_ARBITRATION to 1'b0 to remove this extra logic.
 	parameter [0:0]			OPT_SPI_ARBITRATION = 1'b0;
-	//
-	// For my first design, using an 80MHz clock, 7 bits to the clock
-	// divider was plenty.  Now that I'm starting to use faster and faster
-	// designs, it becomes important to parameterize the number of bits
-	// in the clock divider.  More than 8, however, and the interface
-	// will need to change.
-	parameter			CKDIV_BITS = 7;
 	//
 	//
 	input	wire		i_clk;
@@ -268,6 +268,11 @@ module	sdspi(i_clk,
 	initial	r_data_fil  = 2'b00;
 	initial	r_lgblklen  = LGFIFOLN;
 	initial	r_cmd_err   = 1'b0;
+
+
+	reg	pre_rsp_state;
+	reg nonzero_out;
+
 	always @(posedge i_clk)
 	begin
 		if (!ll_cmd_stb)
@@ -492,7 +497,8 @@ module	sdspi(i_clk,
 		else
 			second_rsp_state <= `SDSPI_RSP_GETWORD;
 
-	reg	pre_rsp_state, nonzero_out;
+
+	
 	always @(posedge i_clk)
 		if (ll_out_stb)
 			nonzero_out <= (|ll_out_dat);
@@ -573,8 +579,19 @@ module	sdspi(i_clk,
 			o_wb_data <= fifo_b_reg;
 		endcase
 
+	reg dly_stb;
+	initial dly_stb = 0;
 	always @(posedge i_clk)
-		o_wb_ack <= wb_stb;
+		if (!i_wb_cyc)
+			dly_stb <= 0;
+		else
+			dly_stb <= wb_stb;
+	initial o_wb_ack = 0;
+	always @(posedge i_clk)
+		if (!i_wb_cyc)
+			o_wb_ack <= 1'b0;
+		else
+			o_wb_ack <= dly_stb;
 
 	initial	q_busy = 1'b1;
 	always @(posedge i_clk)
@@ -636,6 +653,9 @@ module	sdspi(i_clk,
 		else if ((pre_fifo_addr_inc_wr)||(pre_fifo_addr_inc_rd))
 			ll_fifo_addr <= ll_fifo_addr + 1;
 	end
+
+	reg	[(LGFIFOLN-1):0]	r_blklimit;
+	wire	[(LGFIFOLN+1):0]	w_blklimit;
 
 	//
 	// Look for that start token.  This will be present when reading from 
@@ -718,7 +738,7 @@ module	sdspi(i_clk,
 			fifo_a_wr <= 1'b1;
 			fifo_a_wr_mask <= 4'b1111;
 			fifo_a_wr_addr <= fifo_wb_addr;
-            fifo_a_wr_data <= wb_data;
+            fifo_a_wr_data <= {wb_data[7:0],wb_data[15:8],wb_data[23:16],wb_data[31:24]};
 		end else if (pre_fifo_a_wr)
 		begin
 			fifo_a_wr <= 1'b1;
@@ -747,7 +767,7 @@ module	sdspi(i_clk,
 			fifo_b_wr <= 1'b1;
 			fifo_b_wr_mask <= 4'b1111;
 			fifo_b_wr_addr <= fifo_wb_addr;
-			fifo_b_wr_data <= wb_data;
+			fifo_b_wr_data <= {wb_data[7:0],wb_data[15:8],wb_data[23:16],wb_data[31:24]};
 		end else if (pre_fifo_b_wr)
 		begin
 			fifo_b_wr <= 1'b1;
@@ -812,8 +832,7 @@ module	sdspi(i_clk,
 		endcase
 	end
 
-	reg	[(LGFIFOLN-1):0]	r_blklimit;
-	wire	[(LGFIFOLN+1):0]	w_blklimit;
+
 	always @(posedge i_clk)
 		r_blklimit[(LGFIFOLN-1):0] <= (1<<r_lgblklen)-1;
 	assign	w_blklimit = { r_blklimit, 2'b11 };
