@@ -1,4 +1,5 @@
 work/
+*_work/
 *.fst.hier
 *.fst
 *.vcd
