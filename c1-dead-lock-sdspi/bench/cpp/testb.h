@@ -41,23 +41,51 @@
 
 #include <stdio.h>
 #include <stdint.h>
+#include <iostream>
+#include <fstream>
 #include <verilated_vcd_c.h>
 
 #define	TBASSERT(TB,A) do { if (!(A)) { (TB).closetrace(); } assert(A); } while(0);
 
+template <class VA>
+void write_to_output(std::ofstream &outfile, VA *tb) {
+    outfile << static_cast<int>(tb->i_wb_cyc) << ", ";
+    outfile << static_cast<int>(tb->i_wb_stb) << ", ";
+    outfile << static_cast<int>(tb->i_wb_we) << ", ";
+    outfile << static_cast<int>(tb->i_wb_addr) << ", ";
+    outfile << static_cast<int>(tb->i_wb_data) << ", ";
+    outfile << static_cast<int>(tb->o_wb_ack) << ", ";
+    outfile << static_cast<int>(tb->o_wb_stall) << ", ";
+    outfile << static_cast<int>(tb->o_wb_data) << ", ";
+    outfile << static_cast<int>(tb->o_cs_n) << ", ";
+    outfile << static_cast<int>(tb->o_sck) << ", ";
+    outfile << static_cast<int>(tb->o_mosi) << ", ";
+    outfile << static_cast<int>(tb->i_miso) << ", ";
+    outfile << static_cast<int>(tb->o_int) << ", ";
+    outfile << static_cast<int>(tb->i_bus_grant) << ", ";
+    outfile << static_cast<int>(tb->o_debug) << ",\n";
+}
+
 template <class VA>	class TESTB {
 public:
+  std::ofstream signal_file;
 	VA		*m_core;
 	VerilatedVcdC*	m_trace;
 	uint64_t	m_tickcount;
 
 	TESTB(void) : m_trace(NULL), m_tickcount(0l) {
+    signal_file.open("output_sdspi.txt");
+    std::string signal_names = "i_wb_cyc, i_wb_stb, i_wb_we, i_wb_addr, i_wb_data, o_wb_ack, o_wb_stall, o_wb_data, o_cs_n, o_sck, o_mosi, i_miso, o_int, i_bus_grant, o_debug";
+    signal_file << signal_names << std::endl;
+
 		m_core = new VA;
 		Verilated::traceEverOn(true);
 		m_core->i_clk = 0;
 		eval(); // Get our initial values set properly.
 	}
 	virtual ~TESTB(void) {
+    signal_file.flush();
+    signal_file.close();
 		closetrace();
 		delete m_core;
 		m_core = NULL;
@@ -95,6 +123,7 @@ public:
 		if (m_trace) m_trace->dump((vluint64_t)(10*m_tickcount-2));
 		m_core->i_clk = 1;
 		eval();
+    write_to_output(signal_file, m_core);
 		if (m_trace) m_trace->dump((vluint64_t)(10*m_tickcount));
 		m_core->i_clk = 0;
 		eval();
