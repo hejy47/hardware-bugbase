@@ -8,7 +8,7 @@ VERILATOR=../../veripass/verilator/bin/verilator
 VERILATOR_OPT?=
 VERILATOR_OPT+= -cc -timescale-override 10ps/10ps
 VERILATOR_OPT+= -Wno-WIDTH -Wno-LITENDIAN -Wno-UNPACKED -Wno-BLKANDNBLK -Wno-CASEINCOMPLETE -Wno-CASEX -Wno-UNOPTFLAT -Wno-SPLITVAR -Wno-PINMISSING -Wno-ALWCOMBORDER -Wno-TIMESCALEMOD -Wno-VLTAG
-VERILATOR_OPT+= -trace-fst -trace-structs -comp-limit-syms 0
+VERILATOR_OPT+= -trace -trace-structs -comp-limit-syms 0
 VERILATOR_OPT+= -assert -trace-max-array 65536 -trace-max-width 65536
 VERILATOR_ROOT=$(CURDIR)/../../veripass/verilator
 
@@ -22,7 +22,8 @@ VERILATOR_CXX_FILES+= $(VERILATOR_ROOT)/include/verilated_vcd_c.cpp
 VERILATOR_CXX_FILES+= $(VERILATOR_ROOT)/include/verilated_fst_c.cpp
 TEST_CXX_FILES?=$(shell find $(TEST_DIR) -name '*.cpp')
 TEST_RTL_SIMLIB?=$(RTL_WORK_DIR)/V$(SIM_TOP_MODULE)__ALL.a
-TEST_BIN?= test_axis_adapter_64_8
+TEST_BIN?= sources_bug_test
+ORACLE_TEST_BIN?= sources_oracle_test
 
 all: $(SIM_SOURCES)
 
@@ -32,14 +33,14 @@ $(SIM_SOURCES):
 	$(CXX) $(CXX_OPT) -I$@_work $(VERILATOR_CXX_FILES) $(TEST_CXX_FILES) $@_work/V$(SIM_TOP_MODULE)__ALL.a $(CXX_OPT) -o $@_test
 
 clean:
-	rm -rf $(RTL_WORK_DIR) $(TEST_BIN) *.vcd *.fst
+	rm -rf $(RTL_WORK_DIR) $(TEST_BIN) $(ORACLE_TEST_BIN) sources_bug_test.vcd *.fst output.txt
 
 sim:
 	@echo "BUG 7: Incomplete case"
 	./$(TEST_BIN)
 
 wave:
-	gtkwave *.fst >/dev/null 2>/dev/null &
+	gtkwave sources_bug_test.vcd >/dev/null 2>/dev/null &
 
 # for resource-util synthesize
 TOP_MODULE=axis_adapter

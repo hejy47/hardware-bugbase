@@ -2,7 +2,7 @@
 #include <iostream>
 #include <stdio.h>
 #include <cassert>
-#include <verilated_fst_c.h>
+#include <verilated_vcd_c.h>
 #include <verilated.h>
 #include <queue>
 #include <map>
@@ -38,9 +38,9 @@ int main(int argc, char **argv) {
     Vtest_axis_frame_len_8 *tb = new Vtest_axis_frame_len_8;
     
     Verilated::traceEverOn(true);
-    VerilatedFstC *trace = new VerilatedFstC;
+    VerilatedVcdC *trace = new VerilatedVcdC;
     tb->trace(trace, 99);
-    string waveform = string(argv[0])+".fst";
+    string waveform = string(argv[0])+".vcd";
     trace->open(waveform.c_str());
     
     

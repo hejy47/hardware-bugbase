@@ -3,7 +3,7 @@
 #include <fstream>
 #include <stdio.h>
 #include <cassert>
-#include <verilated_fst_c.h>
+#include <verilated_vcd_c.h>
 #include <verilated.h>
 #include <queue>
 #include <map>
@@ -46,14 +46,14 @@ int main(int argc, char **argv) {
     Verilated::commandArgs(argc, argv);
     Vtestbench *tb = new Vtestbench;
 
-    std::ofstream signal_file("output_s1_axi_lite.txt");
+    std::ofstream signal_file("output_s2_axi_lite.txt");
     std::string signal_names = "M_AXIS_ARESETN, M_AXIS_TREADY, M_AXIS_TVALID, M_AXIS_TDATA, M_AXIS_TSTRB, M_AXIS_TLAST";
     signal_file << signal_names << std::endl;
 
     Verilated::traceEverOn(true);
-    VerilatedFstC *trace = new VerilatedFstC;
+    VerilatedVcdC *trace = new VerilatedVcdC;
     tb->trace(trace, 99);
-    string waveform = string(argv[0])+".fst";
+    string waveform = string(argv[0])+".vcd";
     trace->open(waveform.c_str());
 
     if (setjmp(jmp_env) == 0) {

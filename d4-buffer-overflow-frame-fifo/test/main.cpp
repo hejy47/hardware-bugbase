@@ -4,7 +4,7 @@
 #include <string>
 #include <stdio.h>
 #include <cassert>
-#include <verilated_fst_c.h>
+#include <verilated_vcd_c.h>
 #include <verilated.h>
 #include <queue>
 #include <map>
@@ -59,9 +59,9 @@ int main(int argc, char **argv) {
     signal_file << signal_names << std::endl;
 
     Verilated::traceEverOn(true);
-    VerilatedFstC *trace = new VerilatedFstC;
+    VerilatedVcdC *trace = new VerilatedVcdC;
     tb->trace(trace, 99);
-    trace->open("axis_fifo.fst");
+    trace->open("axis_fifo.vcd");
 
     if (setjmp(jmp_env) == 0) {
         signal(SIGABRT, &sig_handler);

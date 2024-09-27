@@ -29,19 +29,19 @@ $(RTL_SOURCES):
 	$(CXX) $(CXX_OPT) -I$@_work $(VERILATOR_CXX_FILES) $(TEST_CXX_FILES) $@_work/V$(SIM_TOP_MODULE)__ALL.a $(CXX_OPT) -o $@_test
 
 clean:
-	rm -rf *_work *_test *.vcd *.fst
+	rm -rf *_work *_test sources_bug_s1b_test.vcd sources_bug_s1r_test.vcd *.fst output_s1_axi_lite.txt
 
 sim:
 	# @echo "BUG 1: incomplete implementation of AXI"
 	# ./sources0_test
 	# @echo "BUG 2: incomplete implementation of AXI"
 	# ./sources1_test
-	@echo "oracle"
-	./sources_oracle
-	# @echo "BUG s1b: incomplete implementation of AXI"
-	# ./sources_bug_s1b
-	# @echo "BUG s1r: incomplete implementation of AXI"
-	# ./sources_bug_s1r
+	# @echo "oracle"
+	# ./sources_oracle
+	@echo "BUG s1b: incomplete implementation of AXI"
+	./sources_bug_s1b_test
+	@echo "BUG s1r: incomplete implementation of AXI"
+	./sources_bug_s1r_test
 
 wave:
 	gtkwave sources0_test.vcd >/dev/null 2>/dev/null &

@@ -38,7 +38,7 @@ sw: verilator
 	$(CXX) $(CXX_OPT) $(VERILATOR_CXX_FILES) $(TEST_CXX_FILES) $(TEST_RTL_SIMLIB) $(CXX_OPT) -o $(TEST_BIN)
 
 clean:
-	rm -rf $(RTL_WORK_DIR) $(TEST_BIN) *.vcd *.fst *.img
+	rm -rf $(RTL_WORK_DIR) $(TEST_BIN) trace.vcd *.fst *.img output_sdspi.txt
 	rm -rf build_* withtask.* notask.* bug9.v
 
 sim: sdcard
