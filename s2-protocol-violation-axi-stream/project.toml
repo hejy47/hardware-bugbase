@@ -1,0 +1,18 @@
+[project]
+directory = "."
+sources = ["rtl/xlnxstream_2018_3_oracle.v", "rtl/trace_tb.v"]
+toplevel = "xlnxstream_2018_3"
+
+[[bugs]]
+name = "s2"
+original = "rtl/xlnxstream_2018_3_oracle.v"
+buggy = "rtl/xlnxstream_2018_3_bug.v"
+
+
+# This is the original testbench from CirFix
+[[testbenches]]
+name = "tb_s2"
+sources = []
+output = "output_s2_axi_stream.txt"
+oracle = "oracle_tb.txt"
+timeout = 7.0

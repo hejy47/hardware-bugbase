@@ -46,7 +46,7 @@ int main(int argc, char **argv) {
     Verilated::commandArgs(argc, argv);
     Vtestbench *tb = new Vtestbench;
 
-    std::ofstream signal_file("output_s1_axi_lite.txt");
+    std::ofstream signal_file("output_s2_axi_stream.txt");
     std::string signal_names = "M_AXIS_ARESETN, M_AXIS_TREADY, M_AXIS_TVALID, M_AXIS_TDATA, M_AXIS_TSTRB, M_AXIS_TLAST";
     signal_file << signal_names << std::endl;
 
