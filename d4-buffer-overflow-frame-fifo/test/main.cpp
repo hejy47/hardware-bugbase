@@ -54,7 +54,7 @@ int main(int argc, char **argv) {
     Vaxis_fifo_wrapper *tb = new Vaxis_fifo_wrapper;
 
     // init file
-    std::ofstream signal_file("output_axis_fifo.txt");
+    std::ofstream signal_file("output_d4_frame_fifo.txt");
     std::string signal_names = "rst, s_axis_tdata, s_axis_tvalid, s_axis_tready, s_axis_tlast, s_axis_tuser, m_axis_tdata, m_axis_tvalid, m_axis_tready, m_axis_tlast, m_axis_tuser, status_overflow, status_bad_frame, status_good_frame";
     signal_file << signal_names << std::endl;
 
