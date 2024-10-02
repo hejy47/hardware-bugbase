@@ -35,4 +35,4 @@ We place two filelists in the above projects, `sources_bug.txt` and `sources_ora
 Run `make RTL_SOURCES=source_bug.txt` will generate the corresponding output_trace in the working directory.
 
 TODO
-- [ ] some projects need `make SIM_SOURCES=source_bug.txt`
+- [x] all projects need `make SIM_SOURCES=source_bug`
