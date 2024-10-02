@@ -4,3 +4,4 @@ work/
 *.vcd
 *.lxt
 test_axis_async_fifo
+*_test
