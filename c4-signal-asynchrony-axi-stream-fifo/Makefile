@@ -1,5 +1,5 @@
 include ../common/Makefile.env
-SIM_SOURCES?=sources.txt
+SIM_SOURCES?=sources
 #SIM_SOURCES?=instrument.txt
 SIM_TOP_MODULE?=test_axis_async_fifo
 TEST_DIR?=test
@@ -28,7 +28,7 @@ TEST_BIN?= test_axis_async_fifo
 all: clean verilator sw
 
 verilator:
-	$(VERILATOR) $(VERILATOR_OPT) -F $(SIM_SOURCES) -top-module $(SIM_TOP_MODULE) --Mdir $(RTL_WORK_DIR)
+	$(VERILATOR) $(VERILATOR_OPT) -F $(SIM_SOURCES).txt -top-module $(SIM_TOP_MODULE) --Mdir $(RTL_WORK_DIR)
 	$(MAKE) -C $(RTL_WORK_DIR) -f V$(SIM_TOP_MODULE).mk VERILATOR_ROOT=$(VERILATOR_ROOT)
 
 sw: verilator
