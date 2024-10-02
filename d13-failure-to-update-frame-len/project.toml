@@ -1,0 +1,19 @@
+[project]
+directory = "."
+sources = ["rtl/axis_frame_len_correctversion.v"]
+toplevel = "axis_frame_len"
+
+
+[[bugs]]
+name = "d13"
+original = "rtl/axis_frame_len_correctversion.v"
+buggy = "rtl/axis_frame_len.v"
+
+
+# This is the original testbench from CirFix
+[[testbenches]]
+name = "tb_d13"
+sources = []
+output = "output.txt"
+oracle = "oracle_tb.txt"
+timeout = 7.0
