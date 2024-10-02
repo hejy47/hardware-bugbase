@@ -1,0 +1,20 @@
+[project]
+directory = "."
+sources = ["rtl/llsdspi.v", "rtl/sdspi.v"]
+toplevel = "sdspi"
+
+
+
+[[bugs]]
+name = "c1"
+original = "rtl/llsdspi.v"
+buggy = "rtl/llsdspi_bug_c1.v"
+
+
+# This is the original testbench from CirFix
+[[testbenches]]
+name = "tb_c1"
+sources = []
+output = "output_sdspi.txt"
+oracle = "oracle_tb.txt"
+timeout = 7.0

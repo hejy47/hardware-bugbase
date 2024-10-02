@@ -1,2 +1,0 @@
-rtl/llsdspi_bug_c1.v
-rtl/sdspi.v

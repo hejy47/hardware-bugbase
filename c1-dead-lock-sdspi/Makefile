@@ -1,5 +1,5 @@
 include ../common/Makefile.env
-RTL_SOURCES?=sources.txt
+SIM_SOURCES?=sources.txt
 TOP_MODULE?=sdspi
 RTL_WORK_DIR?=work
 TEST_DIR?=bench/cpp
@@ -25,17 +25,15 @@ TEST_CXX_FILES?=$(shell find $(TEST_DIR) -name '*.cpp')
 TEST_RTL_SIMLIB?=$(RTL_WORK_DIR)/V$(TOP_MODULE)__ALL.a
 TEST_BIN?= sdspi_tb
 
-all: clean verilator sw sdcard
+all: clean verilator sdcard
 
 sdcard:
 	qemu-img create -f raw sdcard.img 128M
 
 verilator:
-	$(VERILATOR) $(VERILATOR_OPT) -F $(RTL_SOURCES) -top-module $(TOP_MODULE) --Mdir $(RTL_WORK_DIR)
+	$(VERILATOR) $(VERILATOR_OPT) -F $(SIM_SOURCES).txt -top-module $(TOP_MODULE) --Mdir $(RTL_WORK_DIR)
 	$(MAKE) -C $(RTL_WORK_DIR) -f V$(TOP_MODULE).mk VERILATOR_ROOT=$(VERILATOR_ROOT)
-
-sw: verilator
-	$(CXX) $(CXX_OPT) $(VERILATOR_CXX_FILES) $(TEST_CXX_FILES) $(TEST_RTL_SIMLIB) $(CXX_OPT) -o $(TEST_BIN)
+	$(CXX) $(CXX_OPT) $(VERILATOR_CXX_FILES) $(TEST_CXX_FILES) $(TEST_RTL_SIMLIB) $(CXX_OPT) -o $(SIM_SOURCES)_test
 
 clean:
 	rm -rf $(RTL_WORK_DIR) $(TEST_BIN) *.vcd *.fst *.img
