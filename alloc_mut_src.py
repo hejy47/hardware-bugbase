@@ -57,7 +57,6 @@ def process(mut_dir: Path, type: str):
         proj_bugbase_dir / f'sources_mut_{type}_{bug_name.name}.txt'  
       )
       print(f'proj:{proj.name} @ bid:{bug_name.name} finished')
-      break
       
 
 if __name__ == '__main__':
