@@ -26,7 +26,14 @@ def replace_line_in_file(file_path, old_str, new_str, output_file_path):
         lines = file.readlines()
 
     # Replace the entire line that contains old_str with new_str ignore ".v"
-    updated_lines = [new_str + '\n' if 'rtl/' + old_str[:-2] in line else line for line in lines]
+    updated_lines = []
+    f = False
+    for line in lines:
+      if 'rtl/' + old_str[:-2] in line and not f:
+        updated_lines.append(new_str + '\n')
+        f = True
+      else:
+        updated_lines.append(line)
 
     # Write the updated lines to a new file
     with open(output_file_path, 'w') as output_file:
