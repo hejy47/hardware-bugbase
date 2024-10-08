@@ -9,3 +9,5 @@ __pycache__
 *displayinfo*
 *widthinfo*
 .Xil
+*sources_mut*.txt
+output*
