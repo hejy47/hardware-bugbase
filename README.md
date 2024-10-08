@@ -32,3 +32,11 @@ If you find our work interesting, please cite our paper.
 
 We place two filelists in the above projects, `sources_bug.txt` and `sources_oracle.txt`
 All projects need `make SIM_SOURCES=source_bug`
+
+# Generate augmented datasets
+
+```bash
+python alloc_mut_src.py
+```
+
+Then sources_mut_*.txt will be generated in each project and make to compile, e.g., `make SIM_SOURCES=sources_mut_multi_mut_7`
