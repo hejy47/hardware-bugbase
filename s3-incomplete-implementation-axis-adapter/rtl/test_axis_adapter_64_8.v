@@ -134,7 +134,7 @@ always @(*) begin
         if (output_axis_tdata!=8'hcd) begin  //output data should be 0xcd 0xab 0xcd 0xab 0xcd, with tlast==1 at the last 0xcd
             $display("@@@Error: Output tlast signal rises late!\n Output data should be 0xcd 0xab 0xcd 0xab 0xcd, with tlast==1 at the last 0xcd");
         end
-        $finish;
+        // $finish;
     end
 end
 
