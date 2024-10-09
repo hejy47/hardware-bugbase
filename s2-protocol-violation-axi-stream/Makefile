@@ -8,7 +8,7 @@ VERILATOR_OPT?=
 VERILATOR_OPT+= -cc -timescale-override 10ps/10ps
 VERILATOR_OPT+= -Wno-WIDTH -Wno-LITENDIAN -Wno-UNPACKED -Wno-BLKANDNBLK -Wno-CASEINCOMPLETE \
 				-Wno-CASEX -Wno-PINMISSING
-VERILATOR_OPT+= -trace-fst -trace-structs
+VERILATOR_OPT+= -trace -trace-structs
 VERILATOR_OPT+= -assert -trace-max-array 65536 -trace-max-width 65536
 VERILATOR_ROOT=$(CURDIR)/../../veripass/verilator
 
@@ -30,14 +30,14 @@ $(SIM_SOURCES):
 	$(CXX) $(CXX_OPT) -I$@_work $(VERILATOR_CXX_FILES) $(TEST_CXX_FILES) $@_work/V$(SIM_TOP_MODULE)__ALL.a $(CXX_OPT) -o $@_test
 
 clean:
-	rm -rf *_work *_test *.vcd *.fst
+	rm -rf *_work *_test sources_bug_test.vcd *.fst output_s2_axi_lite.txt
 
 sim:
 	@echo "BUG 1: incomplete implementation of AXI Stream"
-	./sources0_test
+	./sources_bug_test
 
 wave:
-	gtkwave sources0_test.fst >/dev/null 2>/dev/null &
+	gtkwave sources_bug_test.vcd >/dev/null 2>/dev/null &
 
 # for resouce-util synthesize
 RTL_SOURCES=sources.txt

@@ -8,7 +8,7 @@ VERILATOR=../../veripass/verilator/bin/verilator
 VERILATOR_OPT?=
 VERILATOR_OPT+= -cc -timescale-override 10ps/10ps
 VERILATOR_OPT+= -Wno-WIDTH -Wno-LITENDIAN -Wno-UNPACKED -Wno-BLKANDNBLK -Wno-CASEINCOMPLETE -Wno-CASEX -Wno-UNOPTFLAT -Wno-SPLITVAR -Wno-PINMISSING -Wno-ALWCOMBORDER -Wno-TIMESCALEMOD -Wno-VLTAG
-VERILATOR_OPT+= -trace-fst -trace-structs -comp-limit-syms 0
+VERILATOR_OPT+= -trace -trace-structs -comp-limit-syms 0
 VERILATOR_OPT+= -assert -trace-max-array 65536 -trace-max-width 65536
 VERILATOR_ROOT=$(CURDIR)/../../veripass/verilator
 
@@ -32,14 +32,14 @@ verilator:
 	$(CXX) $(CXX_OPT) $(VERILATOR_CXX_FILES) $(TEST_CXX_FILES) $(TEST_RTL_SIMLIB) $(CXX_OPT) -o $(SIM_SOURCES)_test
 
 clean:
-	rm -rf $(RTL_WORK_DIR) $(TEST_BIN) *.vcd *.fst
+	rm -rf $(RTL_WORK_DIR) $(TEST_BIN) test_axis_switch_4x1.vcd *.fst output.txt
 
 sim:
 	@echo "BUG N4: Index Mismatch!"
 	./$(TEST_BIN)
 
 wave:
-	gtkwave *.fst >/dev/null 2>/dev/null &
+	gtkwave test_axis_switch_4x1.vcd >/dev/null 2>/dev/null &
 
 # for resource-util synthesize
 TOP_MODULE=axis_switch_4x1
