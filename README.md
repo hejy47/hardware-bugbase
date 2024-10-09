@@ -35,6 +35,15 @@ All projects need `make SIM_SOURCES=source_bug`
 
 # Generate augmented datasets
 
+- c4
+- d4
+- d11
+- d12
+- d13
+- s1
+- s2
+- s3
+
 ```bash
 python alloc_mut_src.py
 ```
