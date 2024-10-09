@@ -123,6 +123,11 @@ public:
 		if (m_trace) m_trace->dump((vluint64_t)(10*m_tickcount-2));
 		m_core->i_clk = 1;
 		eval();
+    if (m_tickcount == 522560) {
+      signal_file.flush();
+      signal_file.close();
+      exit(0);
+    }
     write_to_output(signal_file, m_core);
 		if (m_trace) m_trace->dump((vluint64_t)(10*m_tickcount));
 		m_core->i_clk = 0;

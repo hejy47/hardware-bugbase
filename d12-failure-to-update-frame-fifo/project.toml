@@ -1,0 +1,19 @@
+[project]
+directory = "."
+sources = ["rtl/axis_fifo.v", "rtl/test_axis_fifo.v"]
+toplevel = "axis_fifo"
+
+
+[[bugs]]
+name = "d12"
+original = "rtl/axis_fifo.v"
+buggy = "rtl/axis_fifo_bug_d12.v"
+
+
+# This is the original testbench from CirFix
+[[testbenches]]
+name = "tb_d12"
+sources = []
+output = "output.txt"
+oracle = "oracle_tb.txt"
+timeout = 7.0

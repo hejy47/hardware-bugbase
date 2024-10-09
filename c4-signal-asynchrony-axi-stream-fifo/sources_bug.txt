@@ -1,9 +1,0 @@
-+define+FORMAL
-rtl/axis_async_fifo_bug_c4.v
-rtl/test_axis_async_fifo.v
-rtl/axis_register.v
-rtl/axis_fifo_wrapper.v
-
-
-
-

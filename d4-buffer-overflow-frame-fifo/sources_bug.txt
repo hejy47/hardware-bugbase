@@ -1,2 +1,0 @@
-rtl/axis_fifo_bug_d4.v
-rtl/axis_fifo_wrapper.sv

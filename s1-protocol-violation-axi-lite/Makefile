@@ -1,5 +1,5 @@
 include ../common/Makefile.env
-RTL_SOURCES?=sources_bug_s1b sources_bug_s1r sources_oracle_tb0 sources_oracle_tb1
+SIM_SOURCES?=sources_bug_s1b sources_bug_s1r sources_oracle_tb0 sources_oracle_tb1
 SIM_TOP_MODULE?=testbench
 TEST_DIR?=test
 
@@ -21,9 +21,9 @@ VERILATOR_CXX_FILES+= $(VERILATOR_ROOT)/include/verilated_vcd_c.cpp
 VERILATOR_CXX_FILES+= $(VERILATOR_ROOT)/include/verilated_fst_c.cpp
 TEST_CXX_FILES?=$(shell find $(TEST_DIR) -name '*.cpp')
 
-all: $(RTL_SOURCES)
+all: $(SIM_SOURCES)
 
-$(RTL_SOURCES):
+$(SIM_SOURCES):
 	$(VERILATOR) $(VERILATOR_OPT) -F $@.txt -top-module $(SIM_TOP_MODULE) --Mdir $@_work
 	$(MAKE) -C $@_work -f V$(SIM_TOP_MODULE).mk VERILATOR_ROOT=$(VERILATOR_ROOT)
 	$(CXX) $(CXX_OPT) -I$@_work $(VERILATOR_CXX_FILES) $(TEST_CXX_FILES) $@_work/V$(SIM_TOP_MODULE)__ALL.a $(CXX_OPT) -o $@_test

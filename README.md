@@ -31,8 +31,4 @@ If you find our work interesting, please cite our paper.
 - zipcpu-spi-c1-c3-d9
 
 We place two filelists in the above projects, `sources_bug.txt` and `sources_oracle.txt`
-
-Run `make RTL_SOURCES=source_bug.txt` will generate the corresponding output_trace in the working directory.
-
-TODO
-- [ ] some projects need `make SIM_SOURCES=source_bug.txt`
+All projects need `make SIM_SOURCES=source_bug`

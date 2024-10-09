@@ -1,2 +1,2 @@
-rtl/trace_tb1.v
+rtl/trace_tb0.v
 rtl/xlnxdemo_bug_s1b.v

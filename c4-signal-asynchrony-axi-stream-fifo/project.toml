@@ -1,0 +1,19 @@
+[project]
+directory = "."
+sources = ["rtl/axis_async_fifo.v", "rtl/axis_fifo_wrapper.v", "rtl/axis_register.v"]
+toplevel = "axis_fifo_wrapper"
+
+
+[[bugs]]
+name = "c4"
+original = "rtl/axis_async_fifo.v"
+buggy = "rtl/axis_async_fifo_bug_c4.v"
+
+
+# This is the original testbench from CirFix
+[[testbenches]]
+name = "tb_c4"
+sources = []
+output = "output.txt"
+oracle = "oracle_tb.txt"
+timeout = 7.0

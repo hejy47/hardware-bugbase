@@ -60,8 +60,10 @@ module axis_frame_len #
     output wire                   frame_len_valid
 );
 
-reg [LEN_WIDTH-1:0] frame_len_reg = 0, frame_len_next;
-reg frame_len_valid_reg = 1'b0, frame_len_valid_next;
+reg [LEN_WIDTH-1:0] frame_len_reg = 0;
+reg [LEN_WIDTH-1:0] frame_len_next;
+reg frame_len_valid_reg = 1'b0;
+reg frame_len_valid_next;
 
 assign frame_len = frame_len_reg;
 assign frame_len_valid = frame_len_valid_reg;

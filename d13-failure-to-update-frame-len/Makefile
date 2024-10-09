@@ -1,5 +1,5 @@
 include ../common/Makefile.env
-SIM_SOURCES?=sources.txt
+SIM_SOURCES?=sources
 SIM_TOP_MODULE?=test_axis_frame_len_8
 TEST_DIR?=test
 RTL_WORK_DIR?=work
@@ -24,14 +24,12 @@ TEST_CXX_FILES?=$(shell find $(TEST_DIR) -name '*.cpp')
 TEST_RTL_SIMLIB?=$(RTL_WORK_DIR)/V$(SIM_TOP_MODULE)__ALL.a
 TEST_BIN?= axis_frame_len_8_test
 
-all: clean verilator sw
+all: clean verilator 
 
 verilator:
-	$(VERILATOR) $(VERILATOR_OPT) -F $(SIM_SOURCES) -top-module $(SIM_TOP_MODULE) --Mdir $(RTL_WORK_DIR)
+	$(VERILATOR) $(VERILATOR_OPT) -F $(SIM_SOURCES).txt -top-module $(SIM_TOP_MODULE) --Mdir $(RTL_WORK_DIR)
 	$(MAKE) -C $(RTL_WORK_DIR) -f V$(SIM_TOP_MODULE).mk VERILATOR_ROOT=$(VERILATOR_ROOT)
-
-sw: verilator
-	$(CXX) $(CXX_OPT) $(VERILATOR_CXX_FILES) $(TEST_CXX_FILES) $(TEST_RTL_SIMLIB) $(CXX_OPT) -o $(TEST_BIN)
+	$(CXX) $(CXX_OPT) $(VERILATOR_CXX_FILES) $(TEST_CXX_FILES) $(TEST_RTL_SIMLIB) $(CXX_OPT) -o $(SIM_SOURCES)_test
 
 clean:
 	rm -rf $(RTL_WORK_DIR) $(TEST_BIN) axis_frame_len_8_test.vcd *.fst output.txt

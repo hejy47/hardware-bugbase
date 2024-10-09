@@ -5,3 +5,4 @@ work/
 *.img
 sdspi_tb
 bug9.v
+*_test

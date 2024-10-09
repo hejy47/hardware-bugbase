@@ -5,3 +5,4 @@ work/
 *.vcd
 *.lxt
 test_axis_adapter_64_8
+*_test

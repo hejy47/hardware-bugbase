@@ -1,0 +1,18 @@
+[project]
+directory = "."
+sources = ["rtl/axis_adapter_oracle.v", "rtl/test_axis_adapter_64_8.v"]
+toplevel = "axis_adapter"
+
+[[bugs]]
+name = "s3"
+original = "rtl/axis_adapter_oracle.v"
+buggy = "rtl/axis_adapter_bug_s3.v"
+
+
+# This is the original testbench from CirFix
+[[testbenches]]
+name = "tb_s3"
+sources = []
+output = "output.txt"
+oracle = "oracle_tb.txt"
+timeout = 7.0

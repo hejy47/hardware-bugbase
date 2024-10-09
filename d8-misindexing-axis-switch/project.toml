@@ -1,0 +1,20 @@
+[project]
+directory = "."
+sources = ["rtl/arbiter.v", "rtl/axis_register.v", "rtl/axis_switch.v", "rtl/priority_encoder.v"]
+toplevel = "axis_switch"
+
+
+
+[[bugs]]
+name = "d8"
+original = "rtl/axis_switch.v"
+buggy = "rtl/axis_switch_bug_d8.v"
+
+
+# This is the original testbench from CirFix
+[[testbenches]]
+name = "tb_d8"
+sources = []
+output = "output.txt"
+oracle = "oracle_tb.txt"
+timeout = 7.0
