@@ -1,0 +1,1165 @@
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: c4 with output_file = output.txt
+c4 SUCCESS @ sources_mut_c4 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: c4 with output_file = output.txt
+c4 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_7 with output_file = output.txt
+multi_mut_7 SUCCESS @ sources_mut_multi_mut_7 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_7 with output_file = output.txt
+multi_mut_7 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_3 with output_file = output.txt
+multi_mut_3 FAILED  @ sources_mut_multi_mut_3 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_3 with output_file = output.txt
+multi_mut_3 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_12 with output_file = output.txt
+multi_mut_12 SUCCESS @ sources_mut_multi_mut_12 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_12 with output_file = output.txt
+multi_mut_12 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_8 with output_file = output.txt
+multi_mut_8 SUCCESS @ sources_mut_multi_mut_8 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_8 with output_file = output.txt
+multi_mut_8 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_18 with output_file = output.txt
+multi_mut_18 FAILED  @ sources_mut_multi_mut_18 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_18 with output_file = output.txt
+multi_mut_18 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_14 with output_file = output.txt
+multi_mut_14 SUCCESS @ sources_mut_multi_mut_14 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_14 with output_file = output.txt
+multi_mut_14 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_1 with output_file = output.txt
+multi_mut_1 FAILED  @ sources_mut_multi_mut_1 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_1 with output_file = output.txt
+multi_mut_1 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_0 with output_file = output.txt
+multi_mut_0 SUCCESS @ sources_mut_multi_mut_0 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_0 with output_file = output.txt
+multi_mut_0 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_13 with output_file = output.txt
+multi_mut_13 SUCCESS @ sources_mut_multi_mut_13 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_13 with output_file = output.txt
+multi_mut_13 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_5 with output_file = output.txt
+multi_mut_5 SUCCESS @ sources_mut_multi_mut_5 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_5 with output_file = output.txt
+multi_mut_5 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_2 with output_file = output.txt
+multi_mut_2 FAILED  @ sources_mut_multi_mut_2 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_2 with output_file = output.txt
+multi_mut_2 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_19 with output_file = output.txt
+multi_mut_19 SUCCESS @ sources_mut_multi_mut_19 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_19 with output_file = output.txt
+multi_mut_19 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_11 with output_file = output.txt
+multi_mut_11 SUCCESS @ sources_mut_multi_mut_11 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_11 with output_file = output.txt
+multi_mut_11 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_10 with output_file = output.txt
+multi_mut_10 SUCCESS @ sources_mut_multi_mut_10 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_10 with output_file = output.txt
+multi_mut_10 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_15 with output_file = output.txt
+multi_mut_15 SUCCESS @ sources_mut_multi_mut_15 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_15 with output_file = output.txt
+multi_mut_15 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_16 with output_file = output.txt
+multi_mut_16 SUCCESS @ sources_mut_multi_mut_16 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_16 with output_file = output.txt
+multi_mut_16 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_4 with output_file = output.txt
+multi_mut_4 SUCCESS @ sources_mut_multi_mut_4 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_4 with output_file = output.txt
+multi_mut_4 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_17 with output_file = output.txt
+multi_mut_17 SUCCESS @ sources_mut_multi_mut_17 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_17 with output_file = output.txt
+multi_mut_17 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_6 with output_file = output.txt
+multi_mut_6 FAILED  @ sources_mut_multi_mut_6 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_6 with output_file = output.txt
+multi_mut_6 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: multi_mut_9 with output_file = output.txt
+multi_mut_9 SUCCESS @ sources_mut_multi_mut_9 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: multi_mut_9 with output_file = output.txt
+multi_mut_9 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_7 with output_file = output.txt
+single_mut_7 SUCCESS @ sources_mut_single_mut_7 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_7 with output_file = output.txt
+single_mut_7 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_3 with output_file = output.txt
+single_mut_3 SUCCESS @ sources_mut_single_mut_3 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_3 with output_file = output.txt
+single_mut_3 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_12 with output_file = output.txt
+single_mut_12 SUCCESS @ sources_mut_single_mut_12 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_12 with output_file = output.txt
+single_mut_12 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_8 with output_file = output.txt
+single_mut_8 SUCCESS @ sources_mut_single_mut_8 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_8 with output_file = output.txt
+single_mut_8 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_18 with output_file = output.txt
+single_mut_18 SUCCESS @ sources_mut_single_mut_18 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_18 with output_file = output.txt
+single_mut_18 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_14 with output_file = output.txt
+single_mut_14 SUCCESS @ sources_mut_single_mut_14 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_14 with output_file = output.txt
+single_mut_14 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_1 with output_file = output.txt
+single_mut_1 SUCCESS @ sources_mut_single_mut_1 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_1 with output_file = output.txt
+single_mut_1 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_0 with output_file = output.txt
+single_mut_0 SUCCESS @ sources_mut_single_mut_0 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_0 with output_file = output.txt
+single_mut_0 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_13 with output_file = output.txt
+single_mut_13 SUCCESS @ sources_mut_single_mut_13 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_13 with output_file = output.txt
+single_mut_13 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_5 with output_file = output.txt
+single_mut_5 SUCCESS @ sources_mut_single_mut_5 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_5 with output_file = output.txt
+single_mut_5 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_2 with output_file = output.txt
+single_mut_2 SUCCESS @ sources_mut_single_mut_2 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_2 with output_file = output.txt
+single_mut_2 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_19 with output_file = output.txt
+single_mut_19 SUCCESS @ sources_mut_single_mut_19 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_19 with output_file = output.txt
+single_mut_19 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_11 with output_file = output.txt
+single_mut_11 SUCCESS @ sources_mut_single_mut_11 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_11 with output_file = output.txt
+single_mut_11 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_10 with output_file = output.txt
+single_mut_10 SUCCESS @ sources_mut_single_mut_10 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_10 with output_file = output.txt
+single_mut_10 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_15 with output_file = output.txt
+single_mut_15 SUCCESS @ sources_mut_single_mut_15 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_15 with output_file = output.txt
+single_mut_15 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_16 with output_file = output.txt
+single_mut_16 SUCCESS @ sources_mut_single_mut_16 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_16 with output_file = output.txt
+single_mut_16 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_4 with output_file = output.txt
+single_mut_4 SUCCESS @ sources_mut_single_mut_4 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_4 with output_file = output.txt
+single_mut_4 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_17 with output_file = output.txt
+single_mut_17 SUCCESS @ sources_mut_single_mut_17 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_17 with output_file = output.txt
+single_mut_17 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_6 with output_file = output.txt
+single_mut_6 SUCCESS @ sources_mut_single_mut_6 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_6 with output_file = output.txt
+single_mut_6 SUCCESS @ sources_oracle !
+checking BUGGY: c4-signal-asynchrony-axi-stream-fifo: single_mut_9 with output_file = output.txt
+single_mut_9 SUCCESS @ sources_mut_single_mut_9 !
+checking ORACLE: c4-signal-asynchrony-axi-stream-fifo: single_mut_9 with output_file = output.txt
+single_mut_9 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: d4 with output_file = output_d4_frame_fifo.txt
+d4 FAILED  @ sources_mut_d4 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: d4 with output_file = output_d4_frame_fifo.txt
+d4 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_7 with output_file = output_d4_frame_fifo.txt
+multi_mut_7 SUCCESS @ sources_mut_multi_mut_7 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_7 with output_file = output_d4_frame_fifo.txt
+multi_mut_7 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_3 with output_file = output_d4_frame_fifo.txt
+multi_mut_3 SUCCESS @ sources_mut_multi_mut_3 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_3 with output_file = output_d4_frame_fifo.txt
+multi_mut_3 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_12 with output_file = output_d4_frame_fifo.txt
+multi_mut_12 SUCCESS @ sources_mut_multi_mut_12 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_12 with output_file = output_d4_frame_fifo.txt
+multi_mut_12 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_8 with output_file = output_d4_frame_fifo.txt
+multi_mut_8 SUCCESS @ sources_mut_multi_mut_8 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_8 with output_file = output_d4_frame_fifo.txt
+multi_mut_8 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_18 with output_file = output_d4_frame_fifo.txt
+multi_mut_18 SUCCESS @ sources_mut_multi_mut_18 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_18 with output_file = output_d4_frame_fifo.txt
+multi_mut_18 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_14 with output_file = output_d4_frame_fifo.txt
+multi_mut_14 SUCCESS @ sources_mut_multi_mut_14 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_14 with output_file = output_d4_frame_fifo.txt
+multi_mut_14 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_1 with output_file = output_d4_frame_fifo.txt
+multi_mut_1 SUCCESS @ sources_mut_multi_mut_1 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_1 with output_file = output_d4_frame_fifo.txt
+multi_mut_1 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_0 with output_file = output_d4_frame_fifo.txt
+multi_mut_0 SUCCESS @ sources_mut_multi_mut_0 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_0 with output_file = output_d4_frame_fifo.txt
+multi_mut_0 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_13 with output_file = output_d4_frame_fifo.txt
+multi_mut_13 SUCCESS @ sources_mut_multi_mut_13 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_13 with output_file = output_d4_frame_fifo.txt
+multi_mut_13 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_5 with output_file = output_d4_frame_fifo.txt
+multi_mut_5 SUCCESS @ sources_mut_multi_mut_5 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_5 with output_file = output_d4_frame_fifo.txt
+multi_mut_5 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_2 with output_file = output_d4_frame_fifo.txt
+multi_mut_2 FAILED  @ sources_mut_multi_mut_2 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_2 with output_file = output_d4_frame_fifo.txt
+multi_mut_2 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_19 with output_file = output_d4_frame_fifo.txt
+multi_mut_19 FAILED  @ sources_mut_multi_mut_19 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_19 with output_file = output_d4_frame_fifo.txt
+multi_mut_19 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_11 with output_file = output_d4_frame_fifo.txt
+multi_mut_11 SUCCESS @ sources_mut_multi_mut_11 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_11 with output_file = output_d4_frame_fifo.txt
+multi_mut_11 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_10 with output_file = output_d4_frame_fifo.txt
+multi_mut_10 SUCCESS @ sources_mut_multi_mut_10 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_10 with output_file = output_d4_frame_fifo.txt
+multi_mut_10 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_15 with output_file = output_d4_frame_fifo.txt
+multi_mut_15 SUCCESS @ sources_mut_multi_mut_15 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_15 with output_file = output_d4_frame_fifo.txt
+multi_mut_15 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_16 with output_file = output_d4_frame_fifo.txt
+multi_mut_16 FAILED  @ sources_mut_multi_mut_16 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_16 with output_file = output_d4_frame_fifo.txt
+multi_mut_16 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_4 with output_file = output_d4_frame_fifo.txt
+multi_mut_4 SUCCESS @ sources_mut_multi_mut_4 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_4 with output_file = output_d4_frame_fifo.txt
+multi_mut_4 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_17 with output_file = output_d4_frame_fifo.txt
+multi_mut_17 SUCCESS @ sources_mut_multi_mut_17 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_17 with output_file = output_d4_frame_fifo.txt
+multi_mut_17 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_6 with output_file = output_d4_frame_fifo.txt
+multi_mut_6 SUCCESS @ sources_mut_multi_mut_6 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_6 with output_file = output_d4_frame_fifo.txt
+multi_mut_6 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: multi_mut_9 with output_file = output_d4_frame_fifo.txt
+multi_mut_9 SUCCESS @ sources_mut_multi_mut_9 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: multi_mut_9 with output_file = output_d4_frame_fifo.txt
+multi_mut_9 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_7 with output_file = output_d4_frame_fifo.txt
+single_mut_7 SUCCESS @ sources_mut_single_mut_7 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_7 with output_file = output_d4_frame_fifo.txt
+single_mut_7 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_3 with output_file = output_d4_frame_fifo.txt
+single_mut_3 SUCCESS @ sources_mut_single_mut_3 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_3 with output_file = output_d4_frame_fifo.txt
+single_mut_3 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_12 with output_file = output_d4_frame_fifo.txt
+single_mut_12 SUCCESS @ sources_mut_single_mut_12 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_12 with output_file = output_d4_frame_fifo.txt
+single_mut_12 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_8 with output_file = output_d4_frame_fifo.txt
+single_mut_8 SUCCESS @ sources_mut_single_mut_8 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_8 with output_file = output_d4_frame_fifo.txt
+single_mut_8 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_18 with output_file = output_d4_frame_fifo.txt
+single_mut_18 SUCCESS @ sources_mut_single_mut_18 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_18 with output_file = output_d4_frame_fifo.txt
+single_mut_18 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_14 with output_file = output_d4_frame_fifo.txt
+single_mut_14 SUCCESS @ sources_mut_single_mut_14 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_14 with output_file = output_d4_frame_fifo.txt
+single_mut_14 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_1 with output_file = output_d4_frame_fifo.txt
+single_mut_1 SUCCESS @ sources_mut_single_mut_1 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_1 with output_file = output_d4_frame_fifo.txt
+single_mut_1 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_0 with output_file = output_d4_frame_fifo.txt
+single_mut_0 SUCCESS @ sources_mut_single_mut_0 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_0 with output_file = output_d4_frame_fifo.txt
+single_mut_0 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_13 with output_file = output_d4_frame_fifo.txt
+single_mut_13 SUCCESS @ sources_mut_single_mut_13 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_13 with output_file = output_d4_frame_fifo.txt
+single_mut_13 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_5 with output_file = output_d4_frame_fifo.txt
+single_mut_5 SUCCESS @ sources_mut_single_mut_5 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_5 with output_file = output_d4_frame_fifo.txt
+single_mut_5 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_2 with output_file = output_d4_frame_fifo.txt
+single_mut_2 SUCCESS @ sources_mut_single_mut_2 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_2 with output_file = output_d4_frame_fifo.txt
+single_mut_2 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_19 with output_file = output_d4_frame_fifo.txt
+single_mut_19 SUCCESS @ sources_mut_single_mut_19 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_19 with output_file = output_d4_frame_fifo.txt
+single_mut_19 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_11 with output_file = output_d4_frame_fifo.txt
+single_mut_11 SUCCESS @ sources_mut_single_mut_11 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_11 with output_file = output_d4_frame_fifo.txt
+single_mut_11 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_10 with output_file = output_d4_frame_fifo.txt
+single_mut_10 SUCCESS @ sources_mut_single_mut_10 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_10 with output_file = output_d4_frame_fifo.txt
+single_mut_10 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_15 with output_file = output_d4_frame_fifo.txt
+single_mut_15 SUCCESS @ sources_mut_single_mut_15 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_15 with output_file = output_d4_frame_fifo.txt
+single_mut_15 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_16 with output_file = output_d4_frame_fifo.txt
+single_mut_16 SUCCESS @ sources_mut_single_mut_16 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_16 with output_file = output_d4_frame_fifo.txt
+single_mut_16 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_4 with output_file = output_d4_frame_fifo.txt
+single_mut_4 SUCCESS @ sources_mut_single_mut_4 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_4 with output_file = output_d4_frame_fifo.txt
+single_mut_4 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_17 with output_file = output_d4_frame_fifo.txt
+single_mut_17 SUCCESS @ sources_mut_single_mut_17 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_17 with output_file = output_d4_frame_fifo.txt
+single_mut_17 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_6 with output_file = output_d4_frame_fifo.txt
+single_mut_6 SUCCESS @ sources_mut_single_mut_6 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_6 with output_file = output_d4_frame_fifo.txt
+single_mut_6 SUCCESS @ sources_oracle !
+checking BUGGY: d4-buffer-overflow-frame-fifo: single_mut_9 with output_file = output_d4_frame_fifo.txt
+single_mut_9 SUCCESS @ sources_mut_single_mut_9 !
+checking ORACLE: d4-buffer-overflow-frame-fifo: single_mut_9 with output_file = output_d4_frame_fifo.txt
+single_mut_9 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: d11 with output_file = output.txt
+d11 FAILED  @ sources_mut_d11 !
+checking ORACLE: d11-failure-to-update-frame-fifo: d11 with output_file = output.txt
+d11 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_7 with output_file = output.txt
+multi_mut_7 SUCCESS @ sources_mut_multi_mut_7 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_7 with output_file = output.txt
+multi_mut_7 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_3 with output_file = output.txt
+multi_mut_3 FAILED  @ sources_mut_multi_mut_3 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_3 with output_file = output.txt
+multi_mut_3 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_12 with output_file = output.txt
+multi_mut_12 SUCCESS @ sources_mut_multi_mut_12 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_12 with output_file = output.txt
+multi_mut_12 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_8 with output_file = output.txt
+multi_mut_8 SUCCESS @ sources_mut_multi_mut_8 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_8 with output_file = output.txt
+multi_mut_8 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_18 with output_file = output.txt
+multi_mut_18 SUCCESS @ sources_mut_multi_mut_18 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_18 with output_file = output.txt
+multi_mut_18 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_14 with output_file = output.txt
+multi_mut_14 SUCCESS @ sources_mut_multi_mut_14 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_14 with output_file = output.txt
+multi_mut_14 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_1 with output_file = output.txt
+multi_mut_1 SUCCESS @ sources_mut_multi_mut_1 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_1 with output_file = output.txt
+multi_mut_1 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_0 with output_file = output.txt
+multi_mut_0 SUCCESS @ sources_mut_multi_mut_0 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_0 with output_file = output.txt
+multi_mut_0 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_13 with output_file = output.txt
+multi_mut_13 SUCCESS @ sources_mut_multi_mut_13 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_13 with output_file = output.txt
+multi_mut_13 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_5 with output_file = output.txt
+multi_mut_5 SUCCESS @ sources_mut_multi_mut_5 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_5 with output_file = output.txt
+multi_mut_5 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_2 with output_file = output.txt
+multi_mut_2 SUCCESS @ sources_mut_multi_mut_2 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_2 with output_file = output.txt
+multi_mut_2 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_19 with output_file = output.txt
+multi_mut_19 SUCCESS @ sources_mut_multi_mut_19 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_19 with output_file = output.txt
+multi_mut_19 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_11 with output_file = output.txt
+multi_mut_11 SUCCESS @ sources_mut_multi_mut_11 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_11 with output_file = output.txt
+multi_mut_11 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_10 with output_file = output.txt
+multi_mut_10 SUCCESS @ sources_mut_multi_mut_10 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_10 with output_file = output.txt
+multi_mut_10 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_15 with output_file = output.txt
+multi_mut_15 SUCCESS @ sources_mut_multi_mut_15 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_15 with output_file = output.txt
+multi_mut_15 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_16 with output_file = output.txt
+multi_mut_16 SUCCESS @ sources_mut_multi_mut_16 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_16 with output_file = output.txt
+multi_mut_16 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_4 with output_file = output.txt
+multi_mut_4 SUCCESS @ sources_mut_multi_mut_4 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_4 with output_file = output.txt
+multi_mut_4 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_17 with output_file = output.txt
+multi_mut_17 SUCCESS @ sources_mut_multi_mut_17 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_17 with output_file = output.txt
+multi_mut_17 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_6 with output_file = output.txt
+multi_mut_6 SUCCESS @ sources_mut_multi_mut_6 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_6 with output_file = output.txt
+multi_mut_6 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: multi_mut_9 with output_file = output.txt
+multi_mut_9 SUCCESS @ sources_mut_multi_mut_9 !
+checking ORACLE: d11-failure-to-update-frame-fifo: multi_mut_9 with output_file = output.txt
+multi_mut_9 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_7 with output_file = output.txt
+single_mut_7 SUCCESS @ sources_mut_single_mut_7 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_7 with output_file = output.txt
+single_mut_7 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_3 with output_file = output.txt
+single_mut_3 SUCCESS @ sources_mut_single_mut_3 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_3 with output_file = output.txt
+single_mut_3 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_12 with output_file = output.txt
+single_mut_12 SUCCESS @ sources_mut_single_mut_12 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_12 with output_file = output.txt
+single_mut_12 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_8 with output_file = output.txt
+single_mut_8 SUCCESS @ sources_mut_single_mut_8 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_8 with output_file = output.txt
+single_mut_8 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_18 with output_file = output.txt
+single_mut_18 SUCCESS @ sources_mut_single_mut_18 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_18 with output_file = output.txt
+single_mut_18 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_14 with output_file = output.txt
+single_mut_14 SUCCESS @ sources_mut_single_mut_14 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_14 with output_file = output.txt
+single_mut_14 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_1 with output_file = output.txt
+single_mut_1 SUCCESS @ sources_mut_single_mut_1 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_1 with output_file = output.txt
+single_mut_1 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_0 with output_file = output.txt
+single_mut_0 SUCCESS @ sources_mut_single_mut_0 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_0 with output_file = output.txt
+single_mut_0 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_13 with output_file = output.txt
+single_mut_13 SUCCESS @ sources_mut_single_mut_13 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_13 with output_file = output.txt
+single_mut_13 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_5 with output_file = output.txt
+single_mut_5 SUCCESS @ sources_mut_single_mut_5 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_5 with output_file = output.txt
+single_mut_5 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_2 with output_file = output.txt
+single_mut_2 SUCCESS @ sources_mut_single_mut_2 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_2 with output_file = output.txt
+single_mut_2 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_19 with output_file = output.txt
+single_mut_19 SUCCESS @ sources_mut_single_mut_19 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_19 with output_file = output.txt
+single_mut_19 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_11 with output_file = output.txt
+single_mut_11 SUCCESS @ sources_mut_single_mut_11 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_11 with output_file = output.txt
+single_mut_11 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_10 with output_file = output.txt
+single_mut_10 SUCCESS @ sources_mut_single_mut_10 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_10 with output_file = output.txt
+single_mut_10 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_15 with output_file = output.txt
+single_mut_15 SUCCESS @ sources_mut_single_mut_15 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_15 with output_file = output.txt
+single_mut_15 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_16 with output_file = output.txt
+single_mut_16 SUCCESS @ sources_mut_single_mut_16 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_16 with output_file = output.txt
+single_mut_16 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_4 with output_file = output.txt
+single_mut_4 SUCCESS @ sources_mut_single_mut_4 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_4 with output_file = output.txt
+single_mut_4 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_17 with output_file = output.txt
+single_mut_17 SUCCESS @ sources_mut_single_mut_17 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_17 with output_file = output.txt
+single_mut_17 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_6 with output_file = output.txt
+single_mut_6 SUCCESS @ sources_mut_single_mut_6 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_6 with output_file = output.txt
+single_mut_6 SUCCESS @ sources_oracle !
+checking BUGGY: d11-failure-to-update-frame-fifo: single_mut_9 with output_file = output.txt
+single_mut_9 SUCCESS @ sources_mut_single_mut_9 !
+checking ORACLE: d11-failure-to-update-frame-fifo: single_mut_9 with output_file = output.txt
+single_mut_9 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: d12 with output_file = output.txt
+d12 FAILED  @ sources_mut_d12 !
+checking ORACLE: d12-failure-to-update-frame-fifo: d12 with output_file = output.txt
+d12 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_7 with output_file = output.txt
+multi_mut_7 SUCCESS @ sources_mut_multi_mut_7 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_7 with output_file = output.txt
+multi_mut_7 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_3 with output_file = output.txt
+multi_mut_3 SUCCESS @ sources_mut_multi_mut_3 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_3 with output_file = output.txt
+multi_mut_3 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_12 with output_file = output.txt
+multi_mut_12 SUCCESS @ sources_mut_multi_mut_12 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_12 with output_file = output.txt
+multi_mut_12 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_8 with output_file = output.txt
+multi_mut_8 SUCCESS @ sources_mut_multi_mut_8 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_8 with output_file = output.txt
+multi_mut_8 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_18 with output_file = output.txt
+multi_mut_18 SUCCESS @ sources_mut_multi_mut_18 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_18 with output_file = output.txt
+multi_mut_18 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_14 with output_file = output.txt
+multi_mut_14 SUCCESS @ sources_mut_multi_mut_14 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_14 with output_file = output.txt
+multi_mut_14 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_1 with output_file = output.txt
+multi_mut_1 SUCCESS @ sources_mut_multi_mut_1 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_1 with output_file = output.txt
+multi_mut_1 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_0 with output_file = output.txt
+multi_mut_0 SUCCESS @ sources_mut_multi_mut_0 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_0 with output_file = output.txt
+multi_mut_0 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_13 with output_file = output.txt
+multi_mut_13 SUCCESS @ sources_mut_multi_mut_13 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_13 with output_file = output.txt
+multi_mut_13 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_5 with output_file = output.txt
+multi_mut_5 SUCCESS @ sources_mut_multi_mut_5 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_5 with output_file = output.txt
+multi_mut_5 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_2 with output_file = output.txt
+multi_mut_2 SUCCESS @ sources_mut_multi_mut_2 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_2 with output_file = output.txt
+multi_mut_2 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_19 with output_file = output.txt
+multi_mut_19 SUCCESS @ sources_mut_multi_mut_19 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_19 with output_file = output.txt
+multi_mut_19 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_11 with output_file = output.txt
+multi_mut_11 SUCCESS @ sources_mut_multi_mut_11 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_11 with output_file = output.txt
+multi_mut_11 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_10 with output_file = output.txt
+multi_mut_10 SUCCESS @ sources_mut_multi_mut_10 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_10 with output_file = output.txt
+multi_mut_10 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_15 with output_file = output.txt
+multi_mut_15 SUCCESS @ sources_mut_multi_mut_15 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_15 with output_file = output.txt
+multi_mut_15 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_16 with output_file = output.txt
+multi_mut_16 SUCCESS @ sources_mut_multi_mut_16 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_16 with output_file = output.txt
+multi_mut_16 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_4 with output_file = output.txt
+multi_mut_4 SUCCESS @ sources_mut_multi_mut_4 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_4 with output_file = output.txt
+multi_mut_4 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_17 with output_file = output.txt
+multi_mut_17 SUCCESS @ sources_mut_multi_mut_17 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_17 with output_file = output.txt
+multi_mut_17 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_6 with output_file = output.txt
+multi_mut_6 SUCCESS @ sources_mut_multi_mut_6 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_6 with output_file = output.txt
+multi_mut_6 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: multi_mut_9 with output_file = output.txt
+multi_mut_9 SUCCESS @ sources_mut_multi_mut_9 !
+checking ORACLE: d12-failure-to-update-frame-fifo: multi_mut_9 with output_file = output.txt
+multi_mut_9 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_7 with output_file = output.txt
+single_mut_7 SUCCESS @ sources_mut_single_mut_7 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_7 with output_file = output.txt
+single_mut_7 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_3 with output_file = output.txt
+single_mut_3 SUCCESS @ sources_mut_single_mut_3 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_3 with output_file = output.txt
+single_mut_3 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_12 with output_file = output.txt
+single_mut_12 SUCCESS @ sources_mut_single_mut_12 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_12 with output_file = output.txt
+single_mut_12 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_8 with output_file = output.txt
+single_mut_8 SUCCESS @ sources_mut_single_mut_8 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_8 with output_file = output.txt
+single_mut_8 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_18 with output_file = output.txt
+single_mut_18 SUCCESS @ sources_mut_single_mut_18 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_18 with output_file = output.txt
+single_mut_18 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_14 with output_file = output.txt
+single_mut_14 SUCCESS @ sources_mut_single_mut_14 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_14 with output_file = output.txt
+single_mut_14 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_1 with output_file = output.txt
+single_mut_1 SUCCESS @ sources_mut_single_mut_1 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_1 with output_file = output.txt
+single_mut_1 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_0 with output_file = output.txt
+single_mut_0 SUCCESS @ sources_mut_single_mut_0 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_0 with output_file = output.txt
+single_mut_0 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_13 with output_file = output.txt
+single_mut_13 SUCCESS @ sources_mut_single_mut_13 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_13 with output_file = output.txt
+single_mut_13 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_5 with output_file = output.txt
+single_mut_5 SUCCESS @ sources_mut_single_mut_5 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_5 with output_file = output.txt
+single_mut_5 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_2 with output_file = output.txt
+single_mut_2 SUCCESS @ sources_mut_single_mut_2 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_2 with output_file = output.txt
+single_mut_2 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_19 with output_file = output.txt
+single_mut_19 SUCCESS @ sources_mut_single_mut_19 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_19 with output_file = output.txt
+single_mut_19 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_11 with output_file = output.txt
+single_mut_11 SUCCESS @ sources_mut_single_mut_11 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_11 with output_file = output.txt
+single_mut_11 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_10 with output_file = output.txt
+single_mut_10 SUCCESS @ sources_mut_single_mut_10 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_10 with output_file = output.txt
+single_mut_10 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_15 with output_file = output.txt
+single_mut_15 SUCCESS @ sources_mut_single_mut_15 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_15 with output_file = output.txt
+single_mut_15 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_16 with output_file = output.txt
+single_mut_16 SUCCESS @ sources_mut_single_mut_16 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_16 with output_file = output.txt
+single_mut_16 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_4 with output_file = output.txt
+single_mut_4 SUCCESS @ sources_mut_single_mut_4 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_4 with output_file = output.txt
+single_mut_4 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_17 with output_file = output.txt
+single_mut_17 SUCCESS @ sources_mut_single_mut_17 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_17 with output_file = output.txt
+single_mut_17 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_6 with output_file = output.txt
+single_mut_6 SUCCESS @ sources_mut_single_mut_6 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_6 with output_file = output.txt
+single_mut_6 SUCCESS @ sources_oracle !
+checking BUGGY: d12-failure-to-update-frame-fifo: single_mut_9 with output_file = output.txt
+single_mut_9 SUCCESS @ sources_mut_single_mut_9 !
+checking ORACLE: d12-failure-to-update-frame-fifo: single_mut_9 with output_file = output.txt
+single_mut_9 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: d13 with output_file = output.txt
+d13 SUCCESS @ sources_mut_d13 !
+checking ORACLE: d13-failure-to-update-frame-len: d13 with output_file = output.txt
+d13 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_7 with output_file = output.txt
+multi_mut_7 SUCCESS @ sources_mut_multi_mut_7 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_7 with output_file = output.txt
+multi_mut_7 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_3 with output_file = output.txt
+multi_mut_3 SUCCESS @ sources_mut_multi_mut_3 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_3 with output_file = output.txt
+multi_mut_3 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_12 with output_file = output.txt
+multi_mut_12 SUCCESS @ sources_mut_multi_mut_12 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_12 with output_file = output.txt
+multi_mut_12 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_8 with output_file = output.txt
+multi_mut_8 SUCCESS @ sources_mut_multi_mut_8 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_8 with output_file = output.txt
+multi_mut_8 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_18 with output_file = output.txt
+multi_mut_18 SUCCESS @ sources_mut_multi_mut_18 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_18 with output_file = output.txt
+multi_mut_18 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_14 with output_file = output.txt
+multi_mut_14 SUCCESS @ sources_mut_multi_mut_14 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_14 with output_file = output.txt
+multi_mut_14 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_1 with output_file = output.txt
+multi_mut_1 SUCCESS @ sources_mut_multi_mut_1 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_1 with output_file = output.txt
+multi_mut_1 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_0 with output_file = output.txt
+multi_mut_0 SUCCESS @ sources_mut_multi_mut_0 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_0 with output_file = output.txt
+multi_mut_0 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_13 with output_file = output.txt
+multi_mut_13 SUCCESS @ sources_mut_multi_mut_13 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_13 with output_file = output.txt
+multi_mut_13 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_5 with output_file = output.txt
+multi_mut_5 SUCCESS @ sources_mut_multi_mut_5 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_5 with output_file = output.txt
+multi_mut_5 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_2 with output_file = output.txt
+multi_mut_2 SUCCESS @ sources_mut_multi_mut_2 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_2 with output_file = output.txt
+multi_mut_2 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_19 with output_file = output.txt
+multi_mut_19 SUCCESS @ sources_mut_multi_mut_19 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_19 with output_file = output.txt
+multi_mut_19 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_11 with output_file = output.txt
+multi_mut_11 SUCCESS @ sources_mut_multi_mut_11 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_11 with output_file = output.txt
+multi_mut_11 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_10 with output_file = output.txt
+multi_mut_10 SUCCESS @ sources_mut_multi_mut_10 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_10 with output_file = output.txt
+multi_mut_10 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_15 with output_file = output.txt
+multi_mut_15 SUCCESS @ sources_mut_multi_mut_15 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_15 with output_file = output.txt
+multi_mut_15 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_16 with output_file = output.txt
+multi_mut_16 SUCCESS @ sources_mut_multi_mut_16 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_16 with output_file = output.txt
+multi_mut_16 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_4 with output_file = output.txt
+multi_mut_4 SUCCESS @ sources_mut_multi_mut_4 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_4 with output_file = output.txt
+multi_mut_4 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_17 with output_file = output.txt
+multi_mut_17 SUCCESS @ sources_mut_multi_mut_17 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_17 with output_file = output.txt
+multi_mut_17 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_6 with output_file = output.txt
+multi_mut_6 SUCCESS @ sources_mut_multi_mut_6 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_6 with output_file = output.txt
+multi_mut_6 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: multi_mut_9 with output_file = output.txt
+multi_mut_9 SUCCESS @ sources_mut_multi_mut_9 !
+checking ORACLE: d13-failure-to-update-frame-len: multi_mut_9 with output_file = output.txt
+multi_mut_9 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: single_mut_3 with output_file = output.txt
+single_mut_3 SUCCESS @ sources_mut_single_mut_3 !
+checking ORACLE: d13-failure-to-update-frame-len: single_mut_3 with output_file = output.txt
+single_mut_3 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: single_mut_1 with output_file = output.txt
+single_mut_1 SUCCESS @ sources_mut_single_mut_1 !
+checking ORACLE: d13-failure-to-update-frame-len: single_mut_1 with output_file = output.txt
+single_mut_1 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: single_mut_0 with output_file = output.txt
+single_mut_0 SUCCESS @ sources_mut_single_mut_0 !
+checking ORACLE: d13-failure-to-update-frame-len: single_mut_0 with output_file = output.txt
+single_mut_0 SUCCESS @ sources_oracle !
+checking BUGGY: d13-failure-to-update-frame-len: single_mut_2 with output_file = output.txt
+single_mut_2 SUCCESS @ sources_mut_single_mut_2 !
+checking ORACLE: d13-failure-to-update-frame-len: single_mut_2 with output_file = output.txt
+single_mut_2 SUCCESS @ sources_oracle !
+checking BUGGY: s1-protocol-violation-axi-lite: s1b with output_file = output_s1_axi_lite.txt
+s1b FAILED  @ sources_mut_s1b !
+checking ORACLE: s1-protocol-violation-axi-lite: s1b with output_file = output_s1_axi_lite.txt
+s1b SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: s1r with output_file = output_s1_axi_lite.txt
+s1r SUCCESS @ sources_mut_s1r !
+checking ORACLE: s1-protocol-violation-axi-lite: s1r with output_file = output_s1_axi_lite.txt
+s1r SUCCESS @ sources_oracle_tb1 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_7 with output_file = output_s1_axi_lite.txt
+single_mut_7 FAILED  @ sources_mut_single_mut_7 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_7 with output_file = output_s1_axi_lite.txt
+single_mut_7 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_3 with output_file = output_s1_axi_lite.txt
+single_mut_3 FAILED  @ sources_mut_single_mut_3 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_3 with output_file = output_s1_axi_lite.txt
+single_mut_3 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_12 with output_file = output_s1_axi_lite.txt
+single_mut_12 SUCCESS @ sources_mut_single_mut_12 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_12 with output_file = output_s1_axi_lite.txt
+single_mut_12 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_8 with output_file = output_s1_axi_lite.txt
+single_mut_8 FAILED  @ sources_mut_single_mut_8 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_8 with output_file = output_s1_axi_lite.txt
+single_mut_8 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_18 with output_file = output_s1_axi_lite.txt
+single_mut_18 SUCCESS @ sources_mut_single_mut_18 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_18 with output_file = output_s1_axi_lite.txt
+single_mut_18 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_14 with output_file = output_s1_axi_lite.txt
+single_mut_14 SUCCESS @ sources_mut_single_mut_14 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_14 with output_file = output_s1_axi_lite.txt
+single_mut_14 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_1 with output_file = output_s1_axi_lite.txt
+single_mut_1 SUCCESS @ sources_mut_single_mut_1 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_1 with output_file = output_s1_axi_lite.txt
+single_mut_1 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_0 with output_file = output_s1_axi_lite.txt
+single_mut_0 FAILED  @ sources_mut_single_mut_0 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_0 with output_file = output_s1_axi_lite.txt
+single_mut_0 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_13 with output_file = output_s1_axi_lite.txt
+single_mut_13 FAILED  @ sources_mut_single_mut_13 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_13 with output_file = output_s1_axi_lite.txt
+single_mut_13 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_5 with output_file = output_s1_axi_lite.txt
+single_mut_5 SUCCESS @ sources_mut_single_mut_5 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_5 with output_file = output_s1_axi_lite.txt
+single_mut_5 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_2 with output_file = output_s1_axi_lite.txt
+single_mut_2 SUCCESS @ sources_mut_single_mut_2 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_2 with output_file = output_s1_axi_lite.txt
+single_mut_2 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_11 with output_file = output_s1_axi_lite.txt
+single_mut_11 FAILED  @ sources_mut_single_mut_11 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_11 with output_file = output_s1_axi_lite.txt
+single_mut_11 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_10 with output_file = output_s1_axi_lite.txt
+single_mut_10 SUCCESS @ sources_mut_single_mut_10 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_10 with output_file = output_s1_axi_lite.txt
+single_mut_10 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_15 with output_file = output_s1_axi_lite.txt
+single_mut_15 SUCCESS @ sources_mut_single_mut_15 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_15 with output_file = output_s1_axi_lite.txt
+single_mut_15 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_4 with output_file = output_s1_axi_lite.txt
+single_mut_4 FAILED  @ sources_mut_single_mut_4 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_4 with output_file = output_s1_axi_lite.txt
+single_mut_4 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_17 with output_file = output_s1_axi_lite.txt
+single_mut_17 SUCCESS @ sources_mut_single_mut_17 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_17 with output_file = output_s1_axi_lite.txt
+single_mut_17 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_6 with output_file = output_s1_axi_lite.txt
+single_mut_6 SUCCESS @ sources_mut_single_mut_6 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_6 with output_file = output_s1_axi_lite.txt
+single_mut_6 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s1-protocol-violation-axi-lite: single_mut_9 with output_file = output_s1_axi_lite.txt
+single_mut_9 FAILED  @ sources_mut_single_mut_9 !
+checking ORACLE: s1-protocol-violation-axi-lite: single_mut_9 with output_file = output_s1_axi_lite.txt
+single_mut_9 SUCCESS @ sources_oracle_tb0 !
+checking BUGGY: s2-protocol-violation-axi-stream: s2 with output_file = output_s2_axi_stream.txt
+s2 FAILED  @ sources_mut_s2 !
+checking ORACLE: s2-protocol-violation-axi-stream: s2 with output_file = output_s2_axi_stream.txt
+s2 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_7 with output_file = output_s2_axi_stream.txt
+multi_mut_7 SUCCESS @ sources_mut_multi_mut_7 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_7 with output_file = output_s2_axi_stream.txt
+multi_mut_7 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_3 with output_file = output_s2_axi_stream.txt
+multi_mut_3 FAILED  @ sources_mut_multi_mut_3 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_3 with output_file = output_s2_axi_stream.txt
+multi_mut_3 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_12 with output_file = output_s2_axi_stream.txt
+multi_mut_12 SUCCESS @ sources_mut_multi_mut_12 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_12 with output_file = output_s2_axi_stream.txt
+multi_mut_12 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_8 with output_file = output_s2_axi_stream.txt
+multi_mut_8 SUCCESS @ sources_mut_multi_mut_8 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_8 with output_file = output_s2_axi_stream.txt
+multi_mut_8 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_18 with output_file = output_s2_axi_stream.txt
+multi_mut_18 FAILED  @ sources_mut_multi_mut_18 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_18 with output_file = output_s2_axi_stream.txt
+multi_mut_18 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_14 with output_file = output_s2_axi_stream.txt
+multi_mut_14 SUCCESS @ sources_mut_multi_mut_14 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_14 with output_file = output_s2_axi_stream.txt
+multi_mut_14 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_1 with output_file = output_s2_axi_stream.txt
+multi_mut_1 SUCCESS @ sources_mut_multi_mut_1 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_1 with output_file = output_s2_axi_stream.txt
+multi_mut_1 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_0 with output_file = output_s2_axi_stream.txt
+multi_mut_0 SUCCESS @ sources_mut_multi_mut_0 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_0 with output_file = output_s2_axi_stream.txt
+multi_mut_0 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_13 with output_file = output_s2_axi_stream.txt
+multi_mut_13 SUCCESS @ sources_mut_multi_mut_13 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_13 with output_file = output_s2_axi_stream.txt
+multi_mut_13 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_5 with output_file = output_s2_axi_stream.txt
+multi_mut_5 FAILED  @ sources_mut_multi_mut_5 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_5 with output_file = output_s2_axi_stream.txt
+multi_mut_5 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_2 with output_file = output_s2_axi_stream.txt
+multi_mut_2 SUCCESS @ sources_mut_multi_mut_2 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_2 with output_file = output_s2_axi_stream.txt
+multi_mut_2 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_19 with output_file = output_s2_axi_stream.txt
+multi_mut_19 FAILED  @ sources_mut_multi_mut_19 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_19 with output_file = output_s2_axi_stream.txt
+multi_mut_19 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_11 with output_file = output_s2_axi_stream.txt
+multi_mut_11 FAILED  @ sources_mut_multi_mut_11 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_11 with output_file = output_s2_axi_stream.txt
+multi_mut_11 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_10 with output_file = output_s2_axi_stream.txt
+multi_mut_10 SUCCESS @ sources_mut_multi_mut_10 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_10 with output_file = output_s2_axi_stream.txt
+multi_mut_10 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_15 with output_file = output_s2_axi_stream.txt
+multi_mut_15 SUCCESS @ sources_mut_multi_mut_15 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_15 with output_file = output_s2_axi_stream.txt
+multi_mut_15 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_16 with output_file = output_s2_axi_stream.txt
+multi_mut_16 SUCCESS @ sources_mut_multi_mut_16 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_16 with output_file = output_s2_axi_stream.txt
+multi_mut_16 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_4 with output_file = output_s2_axi_stream.txt
+multi_mut_4 SUCCESS @ sources_mut_multi_mut_4 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_4 with output_file = output_s2_axi_stream.txt
+multi_mut_4 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_17 with output_file = output_s2_axi_stream.txt
+multi_mut_17 FAILED  @ sources_mut_multi_mut_17 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_17 with output_file = output_s2_axi_stream.txt
+multi_mut_17 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_6 with output_file = output_s2_axi_stream.txt
+multi_mut_6 FAILED  @ sources_mut_multi_mut_6 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_6 with output_file = output_s2_axi_stream.txt
+multi_mut_6 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: multi_mut_9 with output_file = output_s2_axi_stream.txt
+multi_mut_9 SUCCESS @ sources_mut_multi_mut_9 !
+checking ORACLE: s2-protocol-violation-axi-stream: multi_mut_9 with output_file = output_s2_axi_stream.txt
+multi_mut_9 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_7 with output_file = output_s2_axi_stream.txt
+single_mut_7 SUCCESS @ sources_mut_single_mut_7 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_7 with output_file = output_s2_axi_stream.txt
+single_mut_7 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_3 with output_file = output_s2_axi_stream.txt
+single_mut_3 SUCCESS @ sources_mut_single_mut_3 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_3 with output_file = output_s2_axi_stream.txt
+single_mut_3 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_12 with output_file = output_s2_axi_stream.txt
+single_mut_12 FAILED  @ sources_mut_single_mut_12 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_12 with output_file = output_s2_axi_stream.txt
+single_mut_12 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_8 with output_file = output_s2_axi_stream.txt
+single_mut_8 SUCCESS @ sources_mut_single_mut_8 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_8 with output_file = output_s2_axi_stream.txt
+single_mut_8 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_18 with output_file = output_s2_axi_stream.txt
+single_mut_18 SUCCESS @ sources_mut_single_mut_18 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_18 with output_file = output_s2_axi_stream.txt
+single_mut_18 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_14 with output_file = output_s2_axi_stream.txt
+single_mut_14 SUCCESS @ sources_mut_single_mut_14 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_14 with output_file = output_s2_axi_stream.txt
+single_mut_14 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_1 with output_file = output_s2_axi_stream.txt
+single_mut_1 SUCCESS @ sources_mut_single_mut_1 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_1 with output_file = output_s2_axi_stream.txt
+single_mut_1 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_0 with output_file = output_s2_axi_stream.txt
+single_mut_0 SUCCESS @ sources_mut_single_mut_0 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_0 with output_file = output_s2_axi_stream.txt
+single_mut_0 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_13 with output_file = output_s2_axi_stream.txt
+single_mut_13 SUCCESS @ sources_mut_single_mut_13 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_13 with output_file = output_s2_axi_stream.txt
+single_mut_13 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_5 with output_file = output_s2_axi_stream.txt
+single_mut_5 SUCCESS @ sources_mut_single_mut_5 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_5 with output_file = output_s2_axi_stream.txt
+single_mut_5 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_2 with output_file = output_s2_axi_stream.txt
+single_mut_2 SUCCESS @ sources_mut_single_mut_2 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_2 with output_file = output_s2_axi_stream.txt
+single_mut_2 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_19 with output_file = output_s2_axi_stream.txt
+single_mut_19 FAILED  @ sources_mut_single_mut_19 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_19 with output_file = output_s2_axi_stream.txt
+single_mut_19 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_11 with output_file = output_s2_axi_stream.txt
+single_mut_11 SUCCESS @ sources_mut_single_mut_11 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_11 with output_file = output_s2_axi_stream.txt
+single_mut_11 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_10 with output_file = output_s2_axi_stream.txt
+single_mut_10 FAILED  @ sources_mut_single_mut_10 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_10 with output_file = output_s2_axi_stream.txt
+single_mut_10 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_15 with output_file = output_s2_axi_stream.txt
+single_mut_15 SUCCESS @ sources_mut_single_mut_15 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_15 with output_file = output_s2_axi_stream.txt
+single_mut_15 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_16 with output_file = output_s2_axi_stream.txt
+single_mut_16 SUCCESS @ sources_mut_single_mut_16 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_16 with output_file = output_s2_axi_stream.txt
+single_mut_16 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_4 with output_file = output_s2_axi_stream.txt
+single_mut_4 FAILED  @ sources_mut_single_mut_4 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_4 with output_file = output_s2_axi_stream.txt
+single_mut_4 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_17 with output_file = output_s2_axi_stream.txt
+single_mut_17 FAILED  @ sources_mut_single_mut_17 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_17 with output_file = output_s2_axi_stream.txt
+single_mut_17 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_6 with output_file = output_s2_axi_stream.txt
+single_mut_6 SUCCESS @ sources_mut_single_mut_6 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_6 with output_file = output_s2_axi_stream.txt
+single_mut_6 SUCCESS @ sources_oracle !
+checking BUGGY: s2-protocol-violation-axi-stream: single_mut_9 with output_file = output_s2_axi_stream.txt
+single_mut_9 SUCCESS @ sources_mut_single_mut_9 !
+checking ORACLE: s2-protocol-violation-axi-stream: single_mut_9 with output_file = output_s2_axi_stream.txt
+single_mut_9 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: s3 with output_file = output.txt
+s3 SUCCESS @ sources_mut_s3 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: s3 with output_file = output.txt
+s3 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_7 with output_file = output.txt
+multi_mut_7 SUCCESS @ sources_mut_multi_mut_7 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_7 with output_file = output.txt
+multi_mut_7 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_3 with output_file = output.txt
+multi_mut_3 SUCCESS @ sources_mut_multi_mut_3 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_3 with output_file = output.txt
+multi_mut_3 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_12 with output_file = output.txt
+multi_mut_12 SUCCESS @ sources_mut_multi_mut_12 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_12 with output_file = output.txt
+multi_mut_12 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_8 with output_file = output.txt
+multi_mut_8 SUCCESS @ sources_mut_multi_mut_8 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_8 with output_file = output.txt
+multi_mut_8 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_18 with output_file = output.txt
+multi_mut_18 SUCCESS @ sources_mut_multi_mut_18 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_18 with output_file = output.txt
+multi_mut_18 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_14 with output_file = output.txt
+multi_mut_14 SUCCESS @ sources_mut_multi_mut_14 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_14 with output_file = output.txt
+multi_mut_14 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_1 with output_file = output.txt
+multi_mut_1 SUCCESS @ sources_mut_multi_mut_1 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_1 with output_file = output.txt
+multi_mut_1 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_0 with output_file = output.txt
+multi_mut_0 SUCCESS @ sources_mut_multi_mut_0 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_0 with output_file = output.txt
+multi_mut_0 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_13 with output_file = output.txt
+multi_mut_13 SUCCESS @ sources_mut_multi_mut_13 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_13 with output_file = output.txt
+multi_mut_13 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_5 with output_file = output.txt
+multi_mut_5 SUCCESS @ sources_mut_multi_mut_5 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_5 with output_file = output.txt
+multi_mut_5 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_2 with output_file = output.txt
+multi_mut_2 SUCCESS @ sources_mut_multi_mut_2 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_2 with output_file = output.txt
+multi_mut_2 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_19 with output_file = output.txt
+multi_mut_19 SUCCESS @ sources_mut_multi_mut_19 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_19 with output_file = output.txt
+multi_mut_19 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_11 with output_file = output.txt
+multi_mut_11 SUCCESS @ sources_mut_multi_mut_11 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_11 with output_file = output.txt
+multi_mut_11 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_10 with output_file = output.txt
+multi_mut_10 SUCCESS @ sources_mut_multi_mut_10 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_10 with output_file = output.txt
+multi_mut_10 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_15 with output_file = output.txt
+multi_mut_15 SUCCESS @ sources_mut_multi_mut_15 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_15 with output_file = output.txt
+multi_mut_15 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_16 with output_file = output.txt
+multi_mut_16 SUCCESS @ sources_mut_multi_mut_16 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_16 with output_file = output.txt
+multi_mut_16 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_4 with output_file = output.txt
+multi_mut_4 SUCCESS @ sources_mut_multi_mut_4 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_4 with output_file = output.txt
+multi_mut_4 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_17 with output_file = output.txt
+multi_mut_17 SUCCESS @ sources_mut_multi_mut_17 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_17 with output_file = output.txt
+multi_mut_17 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_6 with output_file = output.txt
+multi_mut_6 SUCCESS @ sources_mut_multi_mut_6 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_6 with output_file = output.txt
+multi_mut_6 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: multi_mut_9 with output_file = output.txt
+multi_mut_9 SUCCESS @ sources_mut_multi_mut_9 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: multi_mut_9 with output_file = output.txt
+multi_mut_9 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_7 with output_file = output.txt
+single_mut_7 SUCCESS @ sources_mut_single_mut_7 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_7 with output_file = output.txt
+single_mut_7 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_3 with output_file = output.txt
+single_mut_3 SUCCESS @ sources_mut_single_mut_3 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_3 with output_file = output.txt
+single_mut_3 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_12 with output_file = output.txt
+single_mut_12 SUCCESS @ sources_mut_single_mut_12 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_12 with output_file = output.txt
+single_mut_12 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_8 with output_file = output.txt
+single_mut_8 SUCCESS @ sources_mut_single_mut_8 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_8 with output_file = output.txt
+single_mut_8 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_18 with output_file = output.txt
+single_mut_18 SUCCESS @ sources_mut_single_mut_18 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_18 with output_file = output.txt
+single_mut_18 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_14 with output_file = output.txt
+single_mut_14 SUCCESS @ sources_mut_single_mut_14 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_14 with output_file = output.txt
+single_mut_14 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_1 with output_file = output.txt
+single_mut_1 SUCCESS @ sources_mut_single_mut_1 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_1 with output_file = output.txt
+single_mut_1 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_0 with output_file = output.txt
+single_mut_0 SUCCESS @ sources_mut_single_mut_0 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_0 with output_file = output.txt
+single_mut_0 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_13 with output_file = output.txt
+single_mut_13 SUCCESS @ sources_mut_single_mut_13 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_13 with output_file = output.txt
+single_mut_13 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_5 with output_file = output.txt
+single_mut_5 SUCCESS @ sources_mut_single_mut_5 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_5 with output_file = output.txt
+single_mut_5 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_2 with output_file = output.txt
+single_mut_2 SUCCESS @ sources_mut_single_mut_2 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_2 with output_file = output.txt
+single_mut_2 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_19 with output_file = output.txt
+single_mut_19 SUCCESS @ sources_mut_single_mut_19 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_19 with output_file = output.txt
+single_mut_19 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_11 with output_file = output.txt
+single_mut_11 SUCCESS @ sources_mut_single_mut_11 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_11 with output_file = output.txt
+single_mut_11 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_10 with output_file = output.txt
+single_mut_10 SUCCESS @ sources_mut_single_mut_10 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_10 with output_file = output.txt
+single_mut_10 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_15 with output_file = output.txt
+single_mut_15 SUCCESS @ sources_mut_single_mut_15 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_15 with output_file = output.txt
+single_mut_15 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_16 with output_file = output.txt
+single_mut_16 SUCCESS @ sources_mut_single_mut_16 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_16 with output_file = output.txt
+single_mut_16 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_4 with output_file = output.txt
+single_mut_4 SUCCESS @ sources_mut_single_mut_4 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_4 with output_file = output.txt
+single_mut_4 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_17 with output_file = output.txt
+single_mut_17 SUCCESS @ sources_mut_single_mut_17 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_17 with output_file = output.txt
+single_mut_17 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_6 with output_file = output.txt
+single_mut_6 SUCCESS @ sources_mut_single_mut_6 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_6 with output_file = output.txt
+single_mut_6 SUCCESS @ sources_oracle !
+checking BUGGY: s3-incomplete-implementation-axis-adapter: single_mut_9 with output_file = output.txt
+single_mut_9 SUCCESS @ sources_mut_single_mut_9 !
+checking ORACLE: s3-incomplete-implementation-axis-adapter: single_mut_9 with output_file = output.txt
+single_mut_9 SUCCESS @ sources_oracle !
+`
